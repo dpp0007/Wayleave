@@ -1,0 +1,28 @@
+{
+  "name": "wayleave",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "selftest": "tsx lib/selftest.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "motion": "^12.23.12",
+    "next": "^15.5.9",
+    "postcss": "^8.5.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.7",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3"
+  }
+}

@@ -1,0 +1,1437 @@
+{
+  "activity": "operate a commercial drone business",
+  "generated_at": "2026-11-09T04:06:05.932Z",
+  "places": [
+    {
+      "place": "Singapore",
+      "research_run_id": "01a1be77-e191-7f7c-be0e-259390cafaf9",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-10-19",
+        "sources_with_dates": 20,
+        "sources_without_dates": 8,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T04:04:15.770Z"
+      },
+      "all_citations": [
+        "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/",
+        "https://www.caas.gov.sg/unmanned-aircraft/unmanned-aircraft-pilot-licence/",
+        "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg",
+        "https://ask.gov.sg/caas/questions/clq3e4u6z00ey10yevfth7wgt",
+        "https://www.caas.gov.sg/unmanned-aircraft/",
+        "https://licensing.gobusiness.gov.sg/licence-directory/caas/flight-crew-licence",
+        "https://www.acra.gov.sg/register/business/registering-different-business-structures/sole-proprietorship-or-partnership/",
+        "https://www.acra.gov.sg/manage/companies/service-transaction-fees/",
+        "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst",
+        "https://www.caas.gov.sg/e-services-and-forms/civil-aviation-personnel-licensing-system-capels/",
+        "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/",
+        "https://www.avetics.com/blog/cost-of-commercial-drone-services-in-singapore",
+        "https://dronesgator.com/drone-laws-in-singapore",
+        "https://easepect.com/blog/caas-drone-permits-singapore/",
+        "https://blog.uavmodel.com/singapore-caas-drone-regulations-2026-complete-guide-to-permit-requirements-registration-and-no-fly-zones/",
+        "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf",
+        "https://esoms.caas.gov.sg/uaportal/help/FAQs.pdf",
+        "https://sso.agc.gov.sg/SL/ANA1966-S833-2019?DocDate=20251212",
+        "https://www.caas.gov.sg/resources/media-and-publication/newsroom/unmanned-aircraft-regulatory-fees-to-be-revised-from-23-december-2022/",
+        "https://www.caas.gov.sg/unmanned-aircraft/requirements-for-flying-ua/",
+        "https://ask.gov.sg/caas/questions/clq3e4u6x00dk10yeoeyc36x6",
+        "https://ask.gov.sg/caas/questions/clq3e4u7300gm10yegbolo26c",
+        "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/",
+        "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/applying-for-gst-registration",
+        "https://singaporelegaladvice.com/law-articles/everything-new-drone-laws/",
+        "https://sgdronepilot.iblogger.org/uapl",
+        "https://www.airbeacon.com.sg/faq",
+        "https://www.straitstimes.com/singapore/regulatory-fees-for-drones-to-go-up-from-dec-23-with-second-hike-slated-for-jan-15-2024"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "registration",
+          "name": "Business Entity Registration (ACRA via Bizfile)",
+          "authority": "Accounting and Corporate Regulatory Authority (ACRA)",
+          "cost": {
+            "min": 300,
+            "max": 300,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 60
+          },
+          "renewal": "Annual return filing required; renewal fee not stated on registration page",
+          "ongoing_filing": "Annual return to ACRA; frequency: yearly",
+          "source_url": "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/",
+          "evidence": "Business registration | Fee | $300 | Payment method | Credit card, debit card, or online banking. Most registrations are approved soon after payment. Complex applications may take up to 15 working days. Registrations that need extra approval from referral authorities: 14 to 60 days",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 2,
+          "kind": "registration",
+          "name": "Unmanned Aircraft (UA) Registration — CAAS UA Portal",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 25,
+            "max": 25,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 5
+          },
+          "renewal": "No expiry; one-time registration. If label lost or damaged, new label must be purchased at S$25",
+          "ongoing_filing": null,
+          "source_url": "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/",
+          "evidence": "UA registration is a two-step process: 1. Buy a registration label at S$25 each. 2. Complete the online registration via the UA Portal. For online purchases, delivery of the registration label takes up to 5 working days.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 3,
+          "kind": "licence",
+          "name": "Unmanned Aircraft Pilot Licence (UAPL) — CAPELS",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 500,
+            "max": 500,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 10
+          },
+          "renewal": "No fixed expiry; proficiency check required every 4 years (Class A); Class B additionally requires annual refresher training per rating. Proficiency check fee not officially stated by CAAS.",
+          "ongoing_filing": "Proficiency check every 4 years (Class A); annual refresher training (Class B per rating)",
+          "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg",
+          "evidence": "The fee for an initial UAPL application for the first category is $500. Any variation (e.g. adding of category, or adding a rating in Class B) will be $200. The fee for the theory test is $136.25 (inclusive of 9% GST).",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 4,
+          "kind": "licence",
+          "name": "UA Operator Permit (OP) — eSOMS",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 700,
+            "max": 700,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 10
+          },
+          "renewal": "Annual (valid up to 1 year); renewal fee S$300 plus S$200 CFMS subscription fee",
+          "ongoing_filing": "Safety occurrence reports: notify CAAS UAS Duty Officer within 24 hours; written report within 3 working days",
+          "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf",
+          "evidence": "Initial Operator assessment + 1st UA type: $700 (from 15 Jan 2024); For each UA type added or substituted $500; Renewal operator assessment $300. The UA OP lists the approved UA brand(s), model(s) and type(s) of operations and is typically valid for up to one year.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 5,
+          "kind": "registration",
+          "name": "CFMS UA Tracker — Centralised Flight Management System subscription and tracker purchase",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 265,
+            "max": 265,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 7,
+            "max": 7
+          },
+          "renewal": "S$200 CFMS subscription fee charged at each Operator Permit renewal",
+          "ongoing_filing": "CFMS FlyItSafe mobile app usage required before each operation (free app)",
+          "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/",
+          "evidence": "Operator Permit holders must subscribe to the Centralised Flight Management System (CFMS) service and attach a UA tracker to their UA before operating it. UA Tracker S$265 (subject to prevailing GST). CFMS UA Tracker (including collection) | 7 working days",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 6,
+          "kind": "licence",
+          "name": "Class 1 Activity Permit (AP1) — per operation, via eSOMS",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 120,
+            "max": 120,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 5,
+            "max": 5
+          },
+          "renewal": "Per activity/operation; repeat/variation (new dates only) costs S$45. Light show: S$500 per activity, S$425 repeat/variation.",
+          "ongoing_filing": "New AP1 application required for each distinct commercial activity or block of dates",
+          "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/",
+          "evidence": "Class 1 Activity Permit: S$120 (non-light show each activity); S$45 (repeat/variation); S$500 (light show each activity); S$425 (light show repeat/variation). Activity Permit | 5 working days [processing time].",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 7,
+          "kind": "insurance",
+          "name": "Third-Party Liability Insurance (mandatory for commercial operations)",
+          "authority": "Civil Aviation Authority of Singapore (CAAS) — required as part of Operator Permit assessment",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Must remain valid for each Activity Permit window; frequency tied to policy term",
+          "ongoing_filing": "Insurance certificate must be valid and produced on request during enforcement checks",
+          "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/",
+          "evidence": "CAAS grants an Operator Permit to organisations or individuals who demonstrate the ability to operate UA safely. The assessment covers the applicant's: organisational setup, safety procedures, including risk assessments, airworthiness of each UA, competency of personnel involved in flying operations",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 8,
+          "kind": "ongoing",
+          "name": "UAPL Theory Test — CAAS-administered pre-licence examination",
+          "authority": "Civil Aviation Authority of Singapore (CAAS) / Singapore Aviation Academy",
+          "cost": {
+            "min": 136,
+            "max": 136,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Theory test result valid for 24 months from completion date; must be passed before UAPL application",
+          "ongoing_filing": null,
+          "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg",
+          "evidence": "The fee for the theory test is $136.25 (inclusive of 9% GST).",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 9,
+          "kind": "ongoing",
+          "name": "CAPELS Account Registration — Civil Aviation Personnel Licensing System",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "UAPL proficiency check submission every 4 years via CAPELS",
+          "source_url": "https://www.caas.gov.sg/e-services-and-forms/civil-aviation-personnel-licensing-system-capels/",
+          "evidence": "CAPELS is an online portal for licence applicants and holders to submit and manage their licensing matters anytime, anywhere. Apply for Initial Unmanned Aircraft Pilot Licence (UAPL); Initial Application for Unmanned Aircraft Pilot Licence (UAPL) | 10 (working days)",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 10,
+          "kind": "ongoing",
+          "name": "Broadcast Remote Identification (B-RID) — mandatory from 1 December 2025 for UA over 250g",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Continuous compliance — B-RID must be active during all outdoor operations",
+          "source_url": "https://singaporelegaladvice.com/law-articles/everything-new-drone-laws/",
+          "evidence": "From 1 December 2025, UA weighing above 250g must be equipped with Broadcast Remote Identification (B-RID) which serves as a 'digital licence plate'.",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 11,
+          "kind": "tax",
+          "name": "GST Registration — IRAS (mandatory when taxable turnover exceeds S$1 million)",
+          "authority": "Inland Revenue Authority of Singapore (IRAS)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 30
+          },
+          "renewal": "Ongoing; GST returns filed quarterly or monthly after registration",
+          "ongoing_filing": "GST F5/F7/F8 returns; frequency determined by IRAS (typically quarterly)",
+          "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst",
+          "evidence": "You must register for GST if your taxable turnover is: 1. Under the retrospective view, more than $1 million at the end of the calendar year, or 2. Under the prospective view, expected to be more than $1 million in the next 12 months",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 12,
+          "kind": "ongoing",
+          "name": "Safety Occurrence Reporting — mandatory post-incident filing to CAAS",
+          "authority": "Civil Aviation Authority of Singapore (CAAS)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Notify CAAS UAS Duty Officer within 24 hours of any reportable safety matter; written report within 3 working days",
+          "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf",
+          "evidence": "A UA operator should inform the CAAS UAS Duty Officer ... within 24 hours of its occurrence and follow up with a written report within 3 working days",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        }
+      ],
+      "gaps": [
+        "Third-party liability insurance: CAAS official pages (caas.gov.sg) do not explicitly state that liability insurance is a mandatory standalone requirement or specify a minimum coverage amount (e.g. the S$500,000 figure cited by low-quality third-party sources is not confirmed by any official CAAS page retrieved). Insurance is assessed as part of the Operator Permit evaluation but no official minimum is published.",
+        "CFMS B-RID tracker fee: The official fee for the CAAS-issued CFMS B-RID tracker (as distinct from the CFMS UA Tracker at S$265) is not stated on any official page retrieved; the S$265 figure is for the CFMS UA Tracker for Operator Permit holders, not specifically for the standalone B-RID requirement effective 1 December 2025.",
+        "Broadcast Remote Identification (B-RID) official implementation cost and processing time: No official CAAS page in the evidence set states the cost of a compliant B-RID module for the 1 December 2025 mandate or any associated processing time.",
+        "UAPL practical assessment fee (AFE at UATO): CAAS explicitly states it does not regulate UATO fees; no official fee range is published. Only CAAS-direct fees (theory test S$136.25, licence application S$500) are confirmed.",
+        "UAPL proficiency check fee (every 4 years): CAAS states it does not regulate fees charged by UATOs or AFEs for proficiency checks; no official fee is published.",
+        "Class B UAPL annual refresher training fee: Not regulated or published by CAAS officially.",
+        "UA Basic Training Certificate (UABTC) fee: Required for recreational/educational drones 1.5 kg–7 kg (not directly relevant to commercial operators who need a full UAPL), but the fee is not stated on any official CAAS page; CAAS does not regulate UATO fees.",
+        "ACRA annual return fee for companies: The registration page confirms the S$300 incorporation fee but does not state the annual return filing fee on the pages retrieved.",
+        "Operator Permit processing time for BVLOS operations: The advisory circular states applications should be submitted at least 3 months in advance for BVLOS, but does not give a confirmed processing time in working days for BVLOS specifically.",
+        "Singapore Police Force (SPF) permit for protected areas: Required if operating within SPF-designated protected areas, but no fee or processing time is stated on any official page retrieved.",
+        "Insurance certificate minimum validity period: Not stated on any official CAAS page retrieved.",
+        "ACRA business name reservation fee (S$15 per application) is confirmed from the fee schedule [8] but the name reservation step is a prerequisite not separately listed above; noted here for completeness."
+      ],
+      "summary": {
+        "cost_min": 1910,
+        "cost_max": 1910,
+        "currency": "SGD",
+        "cost_items_unknown": 1,
+        "time_min_days": 44,
+        "time_max_days": 127,
+        "time_items_unknown": 1,
+        "time_longest_step_days": 60,
+        "steps": 8,
+        "usd_min": 1489,
+        "usd_max": 1489,
+        "items_unknown": {
+          "cost": 1,
+          "time": 1
+        },
+        "verified": 12,
+        "gaps": 12,
+        "confidence": 0.5,
+        "renewals": [
+          {
+            "name": "Business Entity Registration (ACRA via Bizfile)",
+            "renewal": "Annual return filing required; renewal fee not stated on registration page",
+            "source_url": "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/"
+          },
+          {
+            "name": "Unmanned Aircraft (UA) Registration — CAAS UA Portal",
+            "renewal": "No expiry; one-time registration. If label lost or damaged, new label must be purchased at S$25",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/"
+          },
+          {
+            "name": "Unmanned Aircraft Pilot Licence (UAPL) — CAPELS",
+            "renewal": "No fixed expiry; proficiency check required every 4 years (Class A); Class B additionally requires annual refresher training per rating. Proficiency check fee not officially stated by CAAS.",
+            "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg"
+          },
+          {
+            "name": "UA Operator Permit (OP) — eSOMS",
+            "renewal": "Annual (valid up to 1 year); renewal fee S$300 plus S$200 CFMS subscription fee",
+            "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf"
+          },
+          {
+            "name": "CFMS UA Tracker — Centralised Flight Management System subscription and tracker purchase",
+            "renewal": "S$200 CFMS subscription fee charged at each Operator Permit renewal",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Class 1 Activity Permit (AP1) — per operation, via eSOMS",
+            "renewal": "Per activity/operation; repeat/variation (new dates only) costs S$45. Light show: S$500 per activity, S$425 repeat/variation.",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Third-Party Liability Insurance (mandatory for commercial operations)",
+            "renewal": "Must remain valid for each Activity Permit window; frequency tied to policy term",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "UAPL Theory Test — CAAS-administered pre-licence examination",
+            "renewal": "Theory test result valid for 24 months from completion date; must be passed before UAPL application",
+            "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg"
+          },
+          {
+            "name": "GST Registration — IRAS (mandatory when taxable turnover exceeds S$1 million)",
+            "renewal": "Ongoing; GST returns filed quarterly or monthly after registration",
+            "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "Business Entity Registration (ACRA via Bizfile)",
+            "filing": "Annual return to ACRA; frequency: yearly",
+            "source_url": "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/"
+          },
+          {
+            "name": "Unmanned Aircraft Pilot Licence (UAPL) — CAPELS",
+            "filing": "Proficiency check every 4 years (Class A); annual refresher training (Class B per rating)",
+            "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg"
+          },
+          {
+            "name": "UA Operator Permit (OP) — eSOMS",
+            "filing": "Safety occurrence reports: notify CAAS UAS Duty Officer within 24 hours; written report within 3 working days",
+            "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf"
+          },
+          {
+            "name": "CFMS UA Tracker — Centralised Flight Management System subscription and tracker purchase",
+            "filing": "CFMS FlyItSafe mobile app usage required before each operation (free app)",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Class 1 Activity Permit (AP1) — per operation, via eSOMS",
+            "filing": "New AP1 application required for each distinct commercial activity or block of dates",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Third-Party Liability Insurance (mandatory for commercial operations)",
+            "filing": "Insurance certificate must be valid and produced on request during enforcement checks",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "CAPELS Account Registration — Civil Aviation Personnel Licensing System",
+            "filing": "UAPL proficiency check submission every 4 years via CAPELS",
+            "source_url": "https://www.caas.gov.sg/e-services-and-forms/civil-aviation-personnel-licensing-system-capels/"
+          },
+          {
+            "name": "Broadcast Remote Identification (B-RID) — mandatory from 1 December 2025 for UA over 250g",
+            "filing": "Continuous compliance — B-RID must be active during all outdoor operations",
+            "source_url": "https://singaporelegaladvice.com/law-articles/everything-new-drone-laws/"
+          },
+          {
+            "name": "GST Registration — IRAS (mandatory when taxable turnover exceeds S$1 million)",
+            "filing": "GST F5/F7/F8 returns; frequency determined by IRAS (typically quarterly)",
+            "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst"
+          },
+          {
+            "name": "Safety Occurrence Reporting — mandatory post-incident filing to CAAS",
+            "filing": "Notify CAAS UAS Duty Officer within 24 hours of any reportable safety matter; written report within 3 working days",
+            "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf"
+          }
+        ]
+      }
+    },
+    {
+      "place": "United Kingdom",
+      "research_run_id": "01a1be77-e8a2-7ef9-a416-b8bc5fcbb58f",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-03-16",
+        "sources_with_dates": 8,
+        "sources_without_dates": 19,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T04:03:48.407Z"
+      },
+      "all_citations": [
+        "https://www.caa.co.uk/media/iiodthzc/law-785_2004-15-jan-2021-cap2041a00.pdf",
+        "https://www.legislation.gov.uk/eur/2004/785",
+        "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/level-1-2-and-3-remote-pilot-certificates-and-gvc/",
+        "https://www.gov.uk/guidance/check-if-you-need-an-sia-licence-to-use-a-drone",
+        "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/flyer-ids-and-operator-ids/",
+        "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-an-operator-id/",
+        "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-a-flyer-id/",
+        "https://www.caa.co.uk/drones/specific-category/specific-category-overview/",
+        "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/",
+        "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/apply-for-a-pdra01-operational-authorisation/",
+        "https://www.caa.co.uk/drones/specific-category/uk-sora-based-operational-authorisations/charges-for-a-uk-sora-based-operational-authorisation/",
+        "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/registering-to-fly-drones-and-model-aircraft/",
+        "https://www.caa.co.uk/drones/open-category/drone-code/background-drones-and-model-aircraft-in-the-law/",
+        "https://www.gov.uk/government/news/drones-are-you-flying-yours-safely-and-legally",
+        "https://www.caa.co.uk/data-and-publications/publications/publication-series/ors-5-schemes-of-charges/",
+        "https://www.caa.co.uk/publication/download/24312",
+        "https://www.caa.co.uk/drones/open-category/moving-on-to-more-advanced-flying/insurance-requirements/",
+        "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/manage-or-reapply-for-your-pdra01/",
+        "https://www.caa.co.uk/publication/download/27251",
+        "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/a2-certificate-of-competency-a2-cofc/",
+        "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/remote-pilot-qualifications-overview/",
+        "https://www.caa.co.uk/drones/specific-category/luc-policy-concept/",
+        "https://www.gov.uk/guidance/apply-for-an-sia-licence",
+        "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/class-marks/",
+        "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/remote-pilot-competencies-and-responsibilities/",
+        "https://www.gov.uk/set-up-business",
+        "https://www.gov.uk/how-vat-works"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "registration",
+          "name": "CAA Operator ID (UAS Operator Registration)",
+          "authority": "UK Civil Aviation Authority (CAA)",
+          "cost": {
+            "min": 12.34,
+            "max": 12.34,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; £12.34 per year",
+          "ongoing_filing": "Annual re-registration required; label all drones with Operator ID",
+          "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-an-operator-id/",
+          "evidence": "Registration for an Operator ID costs £12.34 and is valid for 1 year.",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 2,
+          "kind": "licence",
+          "name": "CAA Flyer ID (Remote Pilot Theory Test & Registration)",
+          "authority": "UK Civil Aviation Authority (CAA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Every 5 years; free (retake online theory test)",
+          "ongoing_filing": null,
+          "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-a-flyer-id/",
+          "evidence": "Flyer ID | £0 | 5 years; Use this service to: take the theory test to get a Flyer ID",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 3,
+          "kind": "licence",
+          "name": "RPC-L1 (Level 1 Remote Pilot Certificate) or GVC — Specific Category pilot competency",
+          "authority": "CAA-approved Recognised Assessment Entities for Pilot Competence (RAE-PCs)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Every 5 years (GVC and RPC-L1 validity); renewal fee set by RAE-PC provider",
+          "ongoing_filing": "Remote pilot must maintain a flight log (digital format) per CAP 2606B covering every flight, including date, location, duration, UAS details and unusual occurrences",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/level-1-2-and-3-remote-pilot-certificates-and-gvc/",
+          "evidence": "There are four qualifications for the Specific Category: General Visual Line of Sight Certificate (GVC); Level 1 Remote Pilot Certificate (RPC-L1) Part A – VLOS, Part B – BVLOS with Visual Mitigations (VM); Level 2 Remote Pilot Certificate (RPC-L2); Level 3 Remote Pilot Certificate (RPC-L3).",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 4,
+          "kind": "licence",
+          "name": "PDRA01 Operational Authorisation (Specific Category — standard commercial VLOS operations)",
+          "authority": "UK Civil Aviation Authority (CAA)",
+          "cost": {
+            "min": 524,
+            "max": 524,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 1
+          },
+          "renewal": "Annual; £524 per year (declarative reapplication). Non-declarative: £2,288",
+          "ongoing_filing": "Maintain and produce Operations Manual on CAA request; maintain flight records; report occurrences under UK Reg (EU) 376/2014; report accidents to UK AAIB under UK Reg (EU) 996/2010; notify CAA of any changes to contact or Operations Manual details",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/",
+          "evidence": "PDRA01 costs £524 per year. There's no VAT to pay. Your authorisation will last for 12 months.",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 5,
+          "kind": "insurance",
+          "name": "Third-Party Liability Insurance (Assimilated Regulation (EU) 785/2004)",
+          "authority": "UK Civil Aviation Authority (CAA) / commercial insurer",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Per flight / annual policy (must exist for each and every flight)",
+          "ongoing_filing": "Provide evidence of insurance (certificate or equivalent) to the CAA on demand; minimum third-party cover for drones under 500 kg MTOM: 0.75 million SDRs per accident",
+          "source_url": "https://www.caa.co.uk/drones/open-category/moving-on-to-more-advanced-flying/insurance-requirements/",
+          "evidence": "If you fly a drone or model aircraft for any commercial reason, you must have third party insurance as a minimum. Insurance must comply with the regulatory requirements in Assimilated Regulation (EU) 785/2004.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 6,
+          "kind": "ongoing",
+          "name": "HMRC Self Assessment registration (sole trader) or Corporation Tax / Companies House registration (limited company)",
+          "authority": "HM Revenue & Customs (HMRC) / Companies House",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual tax returns (Self Assessment or Corporation Tax); company accounts filed annually with Companies House",
+          "ongoing_filing": "Sole trader: annual Self Assessment tax return if earnings >£1,000/year. Limited company: annual Corporation Tax return and Companies House accounts filing",
+          "source_url": "https://www.gov.uk/set-up-business",
+          "evidence": "you must register for Self Assessment as a sole trader if you earn more than £1,000 in a tax year ... Directors need to follow the rules when running a limited company and must file accounts and tax returns for the company.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 7,
+          "kind": "tax",
+          "name": "VAT Registration (if VAT-taxable turnover exceeds £90,000)",
+          "authority": "HM Revenue & Customs (HMRC)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Ongoing registration; VAT return submitted usually every 3 months",
+          "ongoing_filing": "Quarterly VAT return to HMRC; pay VAT owed; keep records of VAT charged and paid",
+          "source_url": "https://www.gov.uk/how-vat-works",
+          "evidence": "Businesses have to register for VAT if their VAT taxable turnover is more than £90,000 ... report the amount of VAT you charged your customers and the amount of VAT you paid to other businesses by sending a VAT return to HM Revenue and Customs (HMRC) - usually every 3 months",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 8,
+          "kind": "licence",
+          "name": "UK SORA-based Operational Authorisation (for complex/BVLOS/beyond-standard operations)",
+          "authority": "UK Civil Aviation Authority (CAA)",
+          "cost": {
+            "min": 2422,
+            "max": 17300,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; non-technical reapplication: £2,422 (SAIL I) to £11,517 (SAIL V/VI). No VAT payable.",
+          "ongoing_filing": "Maintain Operations Manual; submit occurrence reports under UK Reg (EU) 376/2014; subject to CAA oversight and audit; excess assessment charges at £346/hour beyond included assessment hours",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/uk-sora-based-operational-authorisations/charges-for-a-uk-sora-based-operational-authorisation/",
+          "evidence": "SAIL 1: Assessment 1 fixed charge £2,422 ... SAIL V/VI initial application & non-technical renewal (Note 6) £17,300 £11,517 ... Your operational authorisation will last for 12 months. There is no VAT to pay.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 9,
+          "kind": "licence",
+          "name": "SIA Public Space Surveillance (CCTV) Licence — required if drone footage is monitored for security purposes",
+          "authority": "Security Industry Authority (SIA)",
+          "cost": {
+            "min": 204,
+            "max": 204,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Every 3 years; renewal fee not stated on official page",
+          "ongoing_filing": null,
+          "source_url": "https://www.gov.uk/guidance/apply-for-an-sia-licence",
+          "evidence": "It costs £204 to apply for 1 licence. On 1 April 2026 the licence application fee changed to £204. All licences last for 3 years – except for a vehicle immobiliser licence, which lasts for 1 year.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 10,
+          "kind": "ongoing",
+          "name": "Ofcom Radio Spectrum Licence (for C2 link / payload communications where required)",
+          "authority": "Ofcom",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "As required by Ofcom licence type",
+          "ongoing_filing": "Ensure ongoing compliance with Ofcom requirements for C2 and payload radio links",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/",
+          "evidence": "The UAS Operator must ensure that the radio spectrum used for the C2 Link and for any payload communications complies with the relevant Ofcom requirements and that any licences required for its operation have been obtained.",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 11,
+          "kind": "ongoing",
+          "name": "Occurrence Reporting — mandatory reporting of safety occurrences and accidents",
+          "authority": "UK CAA (occurrences) / UK Air Accidents Investigation Branch — AAIB (accidents)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Report all occurrences to CAA under UK Reg (EU) 376/2014 / CAP 722 s.2.7; report accidents to UK AAIB under UK Reg (EU) 996/2010; operator must maintain records of each flight and produce on CAA request",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/",
+          "evidence": "Any occurrences that take place while operating under this Authorisation must be reported in accordance with UK Reg (EU) 376/2014 and the requirements set out in CAP 722 section 2.7. Any accidents ... must be reported in accordance with UK Reg (EU) 996/2010 to the UK AAIB.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 12,
+          "kind": "ongoing",
+          "name": "Data Protection Compliance (UK GDPR / Data Protection Act 2018) — if capturing identifiable images",
+          "authority": "Information Commissioner's Office (ICO)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual ICO registration fee for most data controllers (fee tier not confirmed from cited official sources)",
+          "ongoing_filing": "Maintain data protection policy; register with ICO if processing personal data commercially; comply with UK GDPR and DPA 2018 when storing images of identifiable individuals",
+          "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/",
+          "evidence": "Taking and storing images of identifiable individuals from UAS, even inadvertently, may be subject to the General Data Protection Regulation and Data Protection Act 2018.",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        }
+      ],
+      "gaps": [
+        "RPC-L1 and GVC fees: set by individual CAA-approved RAE-PC training providers, not by the CAA directly; no official CAA page states a fixed fee for the pilot qualification course — cost is null",
+        "RPC-L1 and GVC processing/assessment time: no official CAA page states how long RAE-PC providers take to issue the certificate",
+        "Operator ID and Flyer ID processing time: CAA pages do not state an official processing/issuance time for Operator ID or Flyer ID registrations",
+        "PDRA01 processing time: CAA aims for 24 hours [source: apply-for-a-pdra01 page] but this is an aim, not a guaranteed service standard — classified as a target, not a confirmed time_days range; min/max not separately stated",
+        "UK SORA OA processing time: official CAA pages do not state a guaranteed processing/issuance timeframe for SORA-based OAs",
+        "Third-party insurance premium cost: set by commercial insurers; no official government or CAA page states a minimum or typical premium amount",
+        "SIA licence processing time: not stated on the official gov.uk/guidance/apply-for-an-sia-licence page",
+        "SIA licence renewal fee: official page states the licence lasts 3 years but does not state the renewal application fee",
+        "Whether an SIA licence is required specifically for a drone security surveillance operator (as distinct from a person watching footage in a security role) — the gov.uk guidance page at /guidance/check-if-you-need-an-sia-licence-to-use-a-drone states it 'may' be required depending on activities; legal advice recommended",
+        "Ofcom radio spectrum licence: type, fee and processing time depend on specific frequency bands used; no official Ofcom fee confirmed from cited sources",
+        "ICO data controller registration fee: not confirmed from cited official sources; ICO fee schedule is a separate document not included in the evidence",
+        "Companies House limited company incorporation fee: not stated in the gov.uk/set-up-business page cited; a separate Companies House fee schedule applies",
+        "LUC (Light UAS Operator Certificate) application: CAA is currently not accepting LUC applications (trial basis only, restricted participants); fee from ORS5 No. 457 is £6,933 initial / £2,423 renewal but availability is effectively null for new entrants",
+        "A2 CofC fee: set by RAE-PC providers, not by CAA; official CAA page explicitly states no fee — cost is null from an official government source",
+        "PDRA01 declarative vs non-declarative distinction: the scheme of charges (ORS5 No. 457) lists £524 declarative and £2,288 non-declarative; the main PDRA01 overview and manage/reapply pages cite only £524; the applicable route depends on the operator's specific circumstances — status unclear for non-declarative applicants",
+        "VAT registration processing time: not stated on gov.uk/how-vat-works",
+        "HMRC Self Assessment or Corporation Tax registration processing time: not stated on gov.uk/set-up-business"
+      ],
+      "summary": {
+        "cost_min": 3162.34,
+        "cost_max": 18040.34,
+        "currency": "GBP",
+        "cost_items_unknown": 2,
+        "time_min_days": 1,
+        "time_max_days": 1,
+        "time_items_unknown": 7,
+        "time_longest_step_days": 1,
+        "steps": 8,
+        "usd_min": 4226,
+        "usd_max": 24106,
+        "items_unknown": {
+          "cost": 2,
+          "time": 7
+        },
+        "verified": 12,
+        "gaps": 17,
+        "confidence": 0.41379310344827586,
+        "renewals": [
+          {
+            "name": "CAA Operator ID (UAS Operator Registration)",
+            "renewal": "Annual; £12.34 per year",
+            "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-an-operator-id/"
+          },
+          {
+            "name": "CAA Flyer ID (Remote Pilot Theory Test & Registration)",
+            "renewal": "Every 5 years; free (retake online theory test)",
+            "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-a-flyer-id/"
+          },
+          {
+            "name": "RPC-L1 (Level 1 Remote Pilot Certificate) or GVC — Specific Category pilot competency",
+            "renewal": "Every 5 years (GVC and RPC-L1 validity); renewal fee set by RAE-PC provider",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/level-1-2-and-3-remote-pilot-certificates-and-gvc/"
+          },
+          {
+            "name": "PDRA01 Operational Authorisation (Specific Category — standard commercial VLOS operations)",
+            "renewal": "Annual; £524 per year (declarative reapplication). Non-declarative: £2,288",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "Third-Party Liability Insurance (Assimilated Regulation (EU) 785/2004)",
+            "renewal": "Per flight / annual policy (must exist for each and every flight)",
+            "source_url": "https://www.caa.co.uk/drones/open-category/moving-on-to-more-advanced-flying/insurance-requirements/"
+          },
+          {
+            "name": "HMRC Self Assessment registration (sole trader) or Corporation Tax / Companies House registration (limited company)",
+            "renewal": "Annual tax returns (Self Assessment or Corporation Tax); company accounts filed annually with Companies House",
+            "source_url": "https://www.gov.uk/set-up-business"
+          },
+          {
+            "name": "VAT Registration (if VAT-taxable turnover exceeds £90,000)",
+            "renewal": "Ongoing registration; VAT return submitted usually every 3 months",
+            "source_url": "https://www.gov.uk/how-vat-works"
+          },
+          {
+            "name": "UK SORA-based Operational Authorisation (for complex/BVLOS/beyond-standard operations)",
+            "renewal": "Annual; non-technical reapplication: £2,422 (SAIL I) to £11,517 (SAIL V/VI). No VAT payable.",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/uk-sora-based-operational-authorisations/charges-for-a-uk-sora-based-operational-authorisation/"
+          },
+          {
+            "name": "SIA Public Space Surveillance (CCTV) Licence — required if drone footage is monitored for security purposes",
+            "renewal": "Every 3 years; renewal fee not stated on official page",
+            "source_url": "https://www.gov.uk/guidance/apply-for-an-sia-licence"
+          },
+          {
+            "name": "Ofcom Radio Spectrum Licence (for C2 link / payload communications where required)",
+            "renewal": "As required by Ofcom licence type",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "Data Protection Compliance (UK GDPR / Data Protection Act 2018) — if capturing identifiable images",
+            "renewal": "Annual ICO registration fee for most data controllers (fee tier not confirmed from cited official sources)",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "CAA Operator ID (UAS Operator Registration)",
+            "filing": "Annual re-registration required; label all drones with Operator ID",
+            "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-an-operator-id/"
+          },
+          {
+            "name": "RPC-L1 (Level 1 Remote Pilot Certificate) or GVC — Specific Category pilot competency",
+            "filing": "Remote pilot must maintain a flight log (digital format) per CAP 2606B covering every flight, including date, location, duration, UAS details and unusual occurrences",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/level-1-2-and-3-remote-pilot-certificates-and-gvc/"
+          },
+          {
+            "name": "PDRA01 Operational Authorisation (Specific Category — standard commercial VLOS operations)",
+            "filing": "Maintain and produce Operations Manual on CAA request; maintain flight records; report occurrences under UK Reg (EU) 376/2014; report accidents to UK AAIB under UK Reg (EU) 996/2010; notify CAA of any changes to contact or Operations Manual details",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "Third-Party Liability Insurance (Assimilated Regulation (EU) 785/2004)",
+            "filing": "Provide evidence of insurance (certificate or equivalent) to the CAA on demand; minimum third-party cover for drones under 500 kg MTOM: 0.75 million SDRs per accident",
+            "source_url": "https://www.caa.co.uk/drones/open-category/moving-on-to-more-advanced-flying/insurance-requirements/"
+          },
+          {
+            "name": "HMRC Self Assessment registration (sole trader) or Corporation Tax / Companies House registration (limited company)",
+            "filing": "Sole trader: annual Self Assessment tax return if earnings >£1,000/year. Limited company: annual Corporation Tax return and Companies House accounts filing",
+            "source_url": "https://www.gov.uk/set-up-business"
+          },
+          {
+            "name": "VAT Registration (if VAT-taxable turnover exceeds £90,000)",
+            "filing": "Quarterly VAT return to HMRC; pay VAT owed; keep records of VAT charged and paid",
+            "source_url": "https://www.gov.uk/how-vat-works"
+          },
+          {
+            "name": "UK SORA-based Operational Authorisation (for complex/BVLOS/beyond-standard operations)",
+            "filing": "Maintain Operations Manual; submit occurrence reports under UK Reg (EU) 376/2014; subject to CAA oversight and audit; excess assessment charges at £346/hour beyond included assessment hours",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/uk-sora-based-operational-authorisations/charges-for-a-uk-sora-based-operational-authorisation/"
+          },
+          {
+            "name": "Ofcom Radio Spectrum Licence (for C2 link / payload communications where required)",
+            "filing": "Ensure ongoing compliance with Ofcom requirements for C2 and payload radio links",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "Occurrence Reporting — mandatory reporting of safety occurrences and accidents",
+            "filing": "Report all occurrences to CAA under UK Reg (EU) 376/2014 / CAP 722 s.2.7; report accidents to UK AAIB under UK Reg (EU) 996/2010; operator must maintain records of each flight and produce on CAA request",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "Data Protection Compliance (UK GDPR / Data Protection Act 2018) — if capturing identifiable images",
+            "filing": "Maintain data protection policy; register with ICO if processing personal data commercially; comply with UK GDPR and DPA 2018 when storing images of identifiable individuals",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          }
+        ]
+      }
+    },
+    {
+      "place": "Texas, USA",
+      "research_run_id": "01a1be77-e48a-7de6-bffe-cfd2b0df2bb1",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-11-02",
+        "sources_with_dates": 14,
+        "sources_without_dates": 21,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T04:03:37.972Z"
+      },
+      "all_citations": [
+        "https://www.faa.gov/uas/commercial_operators",
+        "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot",
+        "https://www.faa.gov/uas/getting_started/register_drone",
+        "https://www.faa.gov/uas/commercial_operators/part_107_waivers",
+        "https://www.faa.gov/uas/commercial_operators/part_107_airspace_authorizations",
+        "https://www.faa.gov/training_testing/testing",
+        "https://www.faa.gov/uas/getting_started/laanc",
+        "https://www.faa.gov/uas/advanced_operations/dispensing_chemicals",
+        "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Agricultural-Applicators/Drone-Application-of-Pesticides",
+        "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Agricultural-Applicators",
+        "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf",
+        "https://www.wilcotx.gov/1944/Drone-Safety",
+        "https://comptroller.texas.gov/taxes/permit/",
+        "https://www.sos.state.tx.us/corp/formationfaqs.shtml",
+        "https://babin.house.gov/news/documentsingle.aspx?DocumentID=861",
+        "https://www.govinfo.gov/content/pkg/CHRG-117shrg55624/html/CHRG-117shrg55624.htm",
+        "https://www.faa.gov/air_traffic/publications/atpubs/aip_html/part2_enr_section_8.2.html",
+        "https://www.faa.gov/newsroom/recurrent-training-courses-drone-pilots-available-online",
+        "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Pesticide-Commercial-Noncommercial-Applicator-Lice",
+        "https://texasagriculture.gov/Licenses-Registrations",
+        "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107",
+        "https://www.faa.gov/uas/commercial_operators/operations_over_people",
+        "https://www.sos.state.tx.us/corp/index.shtml",
+        "https://comptroller.texas.gov/taxes/sales/",
+        "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=GV&Value=423.0045",
+        "https://www.faa.gov/faq/how-can-i-find-closest-faa-approved-knowledge-testing-center-me",
+        "https://faa.psiexams.com/faa/login",
+        "https://www.faa.gov/uas/getting_started/remote_id",
+        "https://www.faa.gov/licenses_certificates/airmen_certification",
+        "https://www.faa.gov/faq/how-long-does-it-take-faa-send-out-permanent-license-certificate",
+        "https://www.faa.gov/faq/i-completed-test-remote-pilot-i-received-temporary-certificate-i-never-got-my-actual-license",
+        "https://www.sos.state.tx.us/corp/forms/806_boc.pdf",
+        "https://www.sos.state.tx.us/express.shtml",
+        "https://texasagriculture.gov/Portals/0/Publications/PEST/com%20noncom%20applicator%20convenience%20testing%20flyer.pdf",
+        "https://comptroller.texas.gov/taxes/franchise/"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "licence",
+          "name": "FAA Part 107 Remote Pilot Certificate (Unmanned Aircraft General – Small / UAG Knowledge Test + IACRA Application)",
+          "authority": "Federal Aviation Administration (FAA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 70
+          },
+          "renewal": "No expiration on certificate itself; online recurrent training (ALC-677, free) required every 24 calendar months",
+          "ongoing_filing": "Online recurrent training (Part 107 Small UAS Recurrent ALC-677) every 24 calendar months; free via FAASTeam website",
+          "source_url": "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot",
+          "evidence": "\"In order to fly your drone under the FAA's Small UAS Rule (Part 107), you must obtain a Remote Pilot Certificate from the FAA... Pass the initial aeronautical knowledge exam: 'Unmanned Aircraft General – Small (UAG)'\"",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 2,
+          "kind": "registration",
+          "name": "FAA Drone Registration under Part 107 (FAADroneZone)",
+          "authority": "Federal Aviation Administration (FAA)",
+          "cost": {
+            "min": 5,
+            "max": 5,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 1
+          },
+          "renewal": "Every 3 years; $5 renewal fee per drone",
+          "ongoing_filing": null,
+          "source_url": "https://www.faa.gov/uas/getting_started/register_drone",
+          "evidence": "\"Part 107 registration costs $5 per drone and is valid for three (3) years.\"",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 3,
+          "kind": "ongoing",
+          "name": "FAA Remote ID Compliance (Standard Remote ID drone or Broadcast Module)",
+          "authority": "Federal Aviation Administration (FAA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "No separate renewal; compliance is a continuous operational requirement",
+          "ongoing_filing": null,
+          "source_url": "https://www.faa.gov/uas/getting_started/remote_id",
+          "evidence": "\"Drones which are required to be registered or are registered, including those flown for recreation, business, or public safety, must comply with the rule on Remote ID.\"",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 4,
+          "kind": "registration",
+          "name": "Texas LLC (or other entity) Formation – Certificate of Formation filed with Texas Secretary of State",
+          "authority": "Texas Secretary of State (SOS)",
+          "cost": {
+            "min": 300,
+            "max": 300,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": 2,
+            "max": 3
+          },
+          "renewal": "No annual SOS renewal for LLC; franchise tax report filed annually with Comptroller",
+          "ongoing_filing": "Annual Texas Franchise Tax Report (including Public Information Report) due May 15 each year with Texas Comptroller of Public Accounts",
+          "source_url": "https://www.sos.state.tx.us/corp/forms/806_boc.pdf",
+          "evidence": "\"Certificate of formation for a Texas entity (except nonprofit corporation, cooperative association, PA or LP) (Forms 201, 203, 205, 206) $300\"",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": false,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 5,
+          "kind": "tax",
+          "name": "Texas Franchise Tax Registration and Annual Report",
+          "authority": "Texas Comptroller of Public Accounts",
+          "cost": {
+            "min": 0,
+            "max": null,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; no tax due if total revenue ≤ $2,650,000 (2026–2027 threshold); rate 0.75% (non-retail/wholesale) or 0.375% (retail/wholesale) on taxable margin above threshold",
+          "ongoing_filing": "Annual franchise tax report due May 15; Public Information Report (PIR) filed as part of annual franchise tax submission",
+          "source_url": "https://comptroller.texas.gov/taxes/franchise/",
+          "evidence": "\"The Texas franchise tax is a privilege tax imposed on each taxable entity formed or organized in Texas or doing business in Texas... 2026 and 2027 | No Tax Due Threshold | $2,650,000 | Tax Rate (other than retail or wholesale) | 0.75%\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 6,
+          "kind": "tax",
+          "name": "Texas Sales and Use Tax Permit",
+          "authority": "Texas Comptroller of Public Accounts",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": 14,
+            "max": 21
+          },
+          "renewal": "No expiration on permit; monthly or quarterly sales tax returns required (assigned by Comptroller after approval)",
+          "ongoing_filing": "Monthly returns due 20th of following month; quarterly returns due April 20, July 20, October 20, January 20",
+          "source_url": "https://comptroller.texas.gov/taxes/permit/",
+          "evidence": "\"Complete this application if you are engaged in business in Texas; and you sell or lease tangible personal property in Texas; or you sell taxable services in Texas... Allow 2-3 weeks to receive your permit.\"",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 7,
+          "kind": "ongoing",
+          "name": "FAA Part 107 Airspace Authorization (LAANC or FAADroneZone) for Controlled Airspace Operations",
+          "authority": "Federal Aviation Administration (FAA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 56
+          },
+          "renewal": "Per-operation; no fee; LAANC near-real-time for pre-approved altitudes; FAADroneZone manual processing up to 8 weeks",
+          "ongoing_filing": "Required before each flight in Class B, C, D, or E controlled airspace; not a one-time filing",
+          "source_url": "https://www.faa.gov/uas/commercial_operators/part_107_airspace_authorizations",
+          "evidence": "\"Historically, processing takes up to eight weeks from the date of your submission... LAANC authorization requests may be submitted up to 90 days in advance of your planned flight.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 8,
+          "kind": "licence",
+          "name": "TDA Commercial Pesticide Applicator License with Aerial Category (if applying pesticides by drone for hire)",
+          "authority": "Texas Department of Agriculture (TDA)",
+          "cost": {
+            "min": 200,
+            "max": 200,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": 365
+          },
+          "renewal": "Annual; $200/year renewal fee; 5 CEUs required annually (3 of 5 must be in Laws & Regulations, Drift Minimization, Human Safety Factors for aerial category holders)",
+          "ongoing_filing": "Records of all pesticide applications must be maintained for 2 years; TDA exam fees $64 per category exam (General Standards + at least one category, aerial category does not count as standalone)",
+          "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf",
+          "evidence": "\"License fee is $200 for a license valid for one year... Commercial applicators must renew annually and obtain five Continuing Education Units each year.\"",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 9,
+          "kind": "registration",
+          "name": "TDA Commercial Applicator Business Registration (PAB-300) – required for all commercial pesticide applicator businesses",
+          "authority": "Texas Department of Agriculture (TDA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual (linked to license renewal cycle)",
+          "ongoing_filing": null,
+          "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf",
+          "evidence": "\"All commercial applicators must be employed by a commercial applicator business or must register themselves as a commercial applicator business... a commercial applicator business registration (PAB-300) is needed if no business account number exists.\"",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 10,
+          "kind": "insurance",
+          "name": "Commercial Pesticide Applicator Business Liability Insurance (if applying restricted-use, state-limited-use, or regulated herbicide pesticides by drone)",
+          "authority": "Texas Department of Agriculture (TDA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Continuous/annual; proof of coverage must be on file with TDA",
+          "ongoing_filing": null,
+          "source_url": "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Pesticide-Commercial-Noncommercial-Applicator-Lice",
+          "evidence": "\"An applicator business... must be registered with TDA and provide proof of liability financial responsibility in the amount of $100,000 property damage and $100,000 bodily injury per occurrence or a general aggregate at a minimum of $200,000 for each occurrence.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 11,
+          "kind": "ongoing",
+          "name": "FAA Accident/Incident Reporting (Part 107 §107.9) – report serious injury, loss of consciousness, or ≥$500 property damage within 10 days",
+          "authority": "Federal Aviation Administration (FAA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Not applicable; triggered by qualifying event",
+          "ongoing_filing": "Report to FAA within 10 days of any operation resulting in serious injury, loss of consciousness, or property damage of at least $500",
+          "source_url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107",
+          "evidence": "\"You must report any operation that results in serious injury, loss of consciousness, or property damage of at least $500 to the FAA within 10 days.\"",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        },
+        {
+          "step": 12,
+          "kind": "ongoing",
+          "name": "Williamson County / Local Airspace & Safety Compliance (no county permit, but Remote ID, registration, and Part 107 compliance verified locally)",
+          "authority": "Williamson County, TX (referencing FAA requirements)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "USD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Ongoing operational requirement; no separate county permit or fee identified",
+          "ongoing_filing": null,
+          "source_url": "https://www.wilcotx.gov/1944/Drone-Safety",
+          "evidence": "\"Before takeoff: Confirm your drone is registered when required; Ensure Remote ID compliance... Commercial drone pilots need the FAA Remote Pilot Certificate, earned through appropriate training and certification.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09"
+        }
+      ],
+      "gaps": [
+        "FAA Part 107 knowledge test (UAG) fee: The official PSI/Talogy scheduling portal (faa.psiexams.com) confirms scheduling is available but does NOT publish the dollar fee amount on the pages retrieved; FAA pages state 'the test has a fee associated with it' without specifying the amount [18]. Fee must be confirmed directly with PSI/Talogy at time of scheduling.",
+        "FAA Remote Pilot Certificate processing time (temporary certificate): FAA states it 'anticipates issuing temporary certificates within 10 business days after receiving a completed application' [21], but this is a target, not a guarantee; permanent certificate takes 6–10 weeks per FAQ [31]. Combined range used (10 business days temp + up to 70 calendar days for permanent).",
+        "Texas Sales and Use Tax Permit applicability to commercial drone services: Whether specific drone services (photography, inspection, agricultural spraying) constitute 'taxable services' under Texas Tax Code is not confirmed by the official sources retrieved; a tax professional or Comptroller determination letter is needed [13][24].",
+        "TDA Commercial Applicator Business Registration (PAB-300) fee: The official TDA pages and PA-401 instructions reference the PAB-300 form but do NOT state its registration fee. Must be confirmed with TDA directly.",
+        "TDA Commercial Pesticide Applicator License processing time: No official TDA page states a standard processing time for license issuance; the application must be completed within one year [20], but turnaround after submission is not published.",
+        "FAA Part 137 Agricultural Aircraft Operator Certificate (AAOC) and exemption requirements: Drone operators applying pesticides by drone also need an FAA exemption from §107.36 and Part 137 regulations, plus an AAOC [8]. The exemption petition must be filed at least 120 days before intended operations. No fee is stated for the exemption or AAOC on the official pages retrieved.",
+        "Texas state-level insurance mandate for non-pesticide commercial drone operators: No Texas statute or regulatory page reviewed imposes a general liability insurance requirement on commercial drone businesses outside the pesticide context. Insurance is referenced by TDA for pesticide applicators only [10][19]; no equivalent state mandate confirmed for other commercial drone uses.",
+        "Local municipal permits (cities within Texas beyond Williamson County, e.g., Austin, Dallas, Houston, Plano): No city-level drone permit or fee schedule was confirmed from official municipal sources in the evidence set. Operators must check with each municipality where they intend to fly.",
+        "Remote ID Broadcast Module cost: The hardware cost of a compliant Remote ID broadcast module (if the drone is not a Standard Remote ID drone) is a market cost, not a government fee; no official fee schedule exists for this item.",
+        "FAA Part 107 waiver fees: The FAA waiver application (now via AIS Services) has no stated government fee on the pages reviewed [4]; processing time is 'up to 90 days' but is variable and not guaranteed.",
+        "Texas assumed name (DBA) certificate fee: If operating under a trade name, a DBA certificate must be filed with the county clerk in each county of operation [14]; county filing fees vary by county and were not confirmed in the evidence set.",
+        "Federal EIN (IRS): Required for business tax purposes; obtained free from IRS. Not confirmed as a Texas-specific requirement in evidence but universally required for business entities; IRS fee = $0 (online), not addressed in Texas official sources reviewed."
+      ],
+      "summary": {
+        "cost_min": 505,
+        "cost_max": 505,
+        "currency": "USD",
+        "cost_items_unknown": 3,
+        "time_min_days": 392,
+        "time_max_days": 460,
+        "time_items_unknown": 3,
+        "time_longest_step_days": 365,
+        "steps": 8,
+        "usd_min": 505,
+        "usd_max": 505,
+        "items_unknown": {
+          "cost": 3,
+          "time": 3
+        },
+        "verified": 12,
+        "gaps": 12,
+        "confidence": 0.5,
+        "renewals": [
+          {
+            "name": "FAA Part 107 Remote Pilot Certificate (Unmanned Aircraft General – Small / UAG Knowledge Test + IACRA Application)",
+            "renewal": "No expiration on certificate itself; online recurrent training (ALC-677, free) required every 24 calendar months",
+            "source_url": "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot"
+          },
+          {
+            "name": "FAA Drone Registration under Part 107 (FAADroneZone)",
+            "renewal": "Every 3 years; $5 renewal fee per drone",
+            "source_url": "https://www.faa.gov/uas/getting_started/register_drone"
+          },
+          {
+            "name": "FAA Remote ID Compliance (Standard Remote ID drone or Broadcast Module)",
+            "renewal": "No separate renewal; compliance is a continuous operational requirement",
+            "source_url": "https://www.faa.gov/uas/getting_started/remote_id"
+          },
+          {
+            "name": "Texas LLC (or other entity) Formation – Certificate of Formation filed with Texas Secretary of State",
+            "renewal": "No annual SOS renewal for LLC; franchise tax report filed annually with Comptroller",
+            "source_url": "https://www.sos.state.tx.us/corp/forms/806_boc.pdf"
+          },
+          {
+            "name": "Texas Franchise Tax Registration and Annual Report",
+            "renewal": "Annual; no tax due if total revenue ≤ $2,650,000 (2026–2027 threshold); rate 0.75% (non-retail/wholesale) or 0.375% (retail/wholesale) on taxable margin above threshold",
+            "source_url": "https://comptroller.texas.gov/taxes/franchise/"
+          },
+          {
+            "name": "Texas Sales and Use Tax Permit",
+            "renewal": "No expiration on permit; monthly or quarterly sales tax returns required (assigned by Comptroller after approval)",
+            "source_url": "https://comptroller.texas.gov/taxes/permit/"
+          },
+          {
+            "name": "FAA Part 107 Airspace Authorization (LAANC or FAADroneZone) for Controlled Airspace Operations",
+            "renewal": "Per-operation; no fee; LAANC near-real-time for pre-approved altitudes; FAADroneZone manual processing up to 8 weeks",
+            "source_url": "https://www.faa.gov/uas/commercial_operators/part_107_airspace_authorizations"
+          },
+          {
+            "name": "TDA Commercial Pesticide Applicator License with Aerial Category (if applying pesticides by drone for hire)",
+            "renewal": "Annual; $200/year renewal fee; 5 CEUs required annually (3 of 5 must be in Laws & Regulations, Drift Minimization, Human Safety Factors for aerial category holders)",
+            "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf"
+          },
+          {
+            "name": "TDA Commercial Applicator Business Registration (PAB-300) – required for all commercial pesticide applicator businesses",
+            "renewal": "Annual (linked to license renewal cycle)",
+            "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf"
+          },
+          {
+            "name": "Commercial Pesticide Applicator Business Liability Insurance (if applying restricted-use, state-limited-use, or regulated herbicide pesticides by drone)",
+            "renewal": "Continuous/annual; proof of coverage must be on file with TDA",
+            "source_url": "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Pesticide-Commercial-Noncommercial-Applicator-Lice"
+          },
+          {
+            "name": "FAA Accident/Incident Reporting (Part 107 §107.9) – report serious injury, loss of consciousness, or ≥$500 property damage within 10 days",
+            "renewal": "Not applicable; triggered by qualifying event",
+            "source_url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107"
+          },
+          {
+            "name": "Williamson County / Local Airspace & Safety Compliance (no county permit, but Remote ID, registration, and Part 107 compliance verified locally)",
+            "renewal": "Ongoing operational requirement; no separate county permit or fee identified",
+            "source_url": "https://www.wilcotx.gov/1944/Drone-Safety"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "FAA Part 107 Remote Pilot Certificate (Unmanned Aircraft General – Small / UAG Knowledge Test + IACRA Application)",
+            "filing": "Online recurrent training (Part 107 Small UAS Recurrent ALC-677) every 24 calendar months; free via FAASTeam website",
+            "source_url": "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot"
+          },
+          {
+            "name": "Texas LLC (or other entity) Formation – Certificate of Formation filed with Texas Secretary of State",
+            "filing": "Annual Texas Franchise Tax Report (including Public Information Report) due May 15 each year with Texas Comptroller of Public Accounts",
+            "source_url": "https://www.sos.state.tx.us/corp/forms/806_boc.pdf"
+          },
+          {
+            "name": "Texas Franchise Tax Registration and Annual Report",
+            "filing": "Annual franchise tax report due May 15; Public Information Report (PIR) filed as part of annual franchise tax submission",
+            "source_url": "https://comptroller.texas.gov/taxes/franchise/"
+          },
+          {
+            "name": "Texas Sales and Use Tax Permit",
+            "filing": "Monthly returns due 20th of following month; quarterly returns due April 20, July 20, October 20, January 20",
+            "source_url": "https://comptroller.texas.gov/taxes/permit/"
+          },
+          {
+            "name": "FAA Part 107 Airspace Authorization (LAANC or FAADroneZone) for Controlled Airspace Operations",
+            "filing": "Required before each flight in Class B, C, D, or E controlled airspace; not a one-time filing",
+            "source_url": "https://www.faa.gov/uas/commercial_operators/part_107_airspace_authorizations"
+          },
+          {
+            "name": "TDA Commercial Pesticide Applicator License with Aerial Category (if applying pesticides by drone for hire)",
+            "filing": "Records of all pesticide applications must be maintained for 2 years; TDA exam fees $64 per category exam (General Standards + at least one category, aerial category does not count as standalone)",
+            "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf"
+          },
+          {
+            "name": "FAA Accident/Incident Reporting (Part 107 §107.9) – report serious injury, loss of consciousness, or ≥$500 property damage within 10 days",
+            "filing": "Report to FAA within 10 days of any operation resulting in serious injury, loss of consciousness, or property damage of at least $500",
+            "source_url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107"
+          }
+        ]
+      }
+    }
+  ],
+  "recommendation": {
+    "ranking": [
+      {
+        "place": "Singapore",
+        "level": "full",
+        "score": 0.81,
+        "missing": []
+      },
+      {
+        "place": "Texas, USA",
+        "level": "full",
+        "score": 0.525,
+        "missing": []
+      },
+      {
+        "place": "United Kingdom",
+        "level": "full",
+        "score": 0.225,
+        "missing": [
+          "time"
+        ]
+      }
+    ],
+    "weights": {
+      "cost": 0.35,
+      "time": 0.3,
+      "steps": 0.15,
+      "confidence": 0.2
+    },
+    "text": [
+      "Easiest place to start on the evidence gathered: Singapore (score 0.81).",
+      "Cost: Singapore 1489 USD upper bound (FX-converted) vs Texas, USA 505 USD upper bound (FX-converted).",
+      "Time: Singapore 127 days upper bound (steps summed) vs Texas, USA 460 days upper bound (steps summed).",
+      "Singapore has 12 flagged gap(s) - confirm with a local lawyer.",
+      "Texas, USA has 12 flagged gap(s) - confirm with a local lawyer.",
+      "United Kingdom: time not scored (too little stated on official pages); not rewarded for that gap.",
+      "United Kingdom has 17 flagged gap(s) - confirm with a local lawyer.",
+      "Costs/times are what official pages state; real timelines vary. Hand this to a lawyer to confirm."
+    ]
+  },
+  "fx_note": "USD figures use live open.er-api.com rates (indicative); native-currency totals are authoritative.",
+  "refreshed_at": "2026-11-09T04:27:58.637Z"
+}

@@ -1,0 +1,1855 @@
+{
+  "activity": "open a small cafe serving food and coffee",
+  "places": [
+    {
+      "place": "Dubai, UAE",
+      "research_run_id": "01a1c024-7965-7220-a447-e5a698b6abf8",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-08-03",
+        "sources_with_dates": 9,
+        "sources_without_dates": 12,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T11:52:50.606Z"
+      },
+      "all_citations": [
+        "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf",
+        "https://deddxb.ae/services/issue-trade-license-2-2-2/",
+        "https://www.dm.gov.ae/municipality-business/food-safety-department-2/food-safety-department/",
+        "https://tax.gov.ae/en/content/mandatory.registration.aspx",
+        "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.issues.new.decision.on.specified.timeframes.for.corporate.tax.registration.aspx",
+        "https://www.dm.gov.ae/latest-digital-food-safety-services-showcased-at-gulfood-2025/",
+        "https://www.investindubai.gov.ae/en/business-setup/business-setup-services/request-to-book-a-trade-name",
+        "https://www.investindubai.gov.ae/en/business-setup/business-setup-services/request-to-issue-a-trade-licence",
+        "https://www.dm.gov.ae/municipality-business/food-safety-department-2/important-information-to-food-establishment/",
+        "https://www.dm.gov.ae/municipality-business/food-traders-establishments/",
+        "https://tax.gov.ae/en/services/vat.registration.aspx",
+        "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+        "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/small.business.relief.23.aspx",
+        "https://dlp.dubai.gov.ae/Legislation%20Reference/2017/Administrative%20Resolution%20No.%20(93)%20of%202017%20Concerning%20Pricing%20of%20Occupational%20Health%20Screening%20Services.html",
+        "https://dubailand.gov.ae/en/eservices/request-for-registration-of-a-user-in-ejari-system/",
+        "https://tax.gov.ae/en/media.centre/news/fta.confirms.taxable.persons.eligible.for.the.small.business.relief.must.submit.simplified.corporate.tax.returns.within.prescribed.legal.deadline.aspx",
+        "https://www.dubaidet.gov.ae/en/licences-and-permits/business-licensing",
+        "https://tax.gov.ae/datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf",
+        "https://dubailand.gov.ae/en/eservices/register-renew-ejari-contract/",
+        "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+        "https://www.investindubai.gov.ae/en/business-setup/business-setup-services/renew-trade-licence"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "registration",
+          "name": "Trade Name Reservation",
+          "authority": "Dubai Department of Economy and Tourism (DET)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": null,
+          "source_url": "https://www.investindubai.gov.ae/en/business-setup/business-setup-services/request-to-book-a-trade-name",
+          "evidence": "Search by business name or Dubai Unified Licence (DUL) number; See a comparison of mainland and free-zone business options; Details of setting up a mainland company in Dubai",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "start-ups and SMEs The region’s largest hub for private wealth and business Dubai: your preferred global arena for business Be a part of building Dubai's global industrial powerhouse Attracting the world’s best MNCs and conglomerates Catalysing venture capital and private equity growth Dubai's Economic Agenda 'D33' aims to double the economy in the decade to 2033, making Dubai one of the top three cities for living, investing and working. Search by business name or Dubai Unified Licence (DUL) number See a comparison of mainland and free-zone business options Details of setting up a mainland company in Dubai Learn about the benefits of Dubai's free zones Get your new Dubai business up and running Introduction to Dubai's rules and regulations Funding and resources for start-ups and SMEs Access Dubai Government services for companies Find out all you need to know about the Du",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 2,
+          "kind": "licence",
+          "name": "Commercial Trade Licence (Food & Beverage Activity) – DET Mainland",
+          "authority": "Dubai Department of Economy and Tourism (DET)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; renewal fee not confirmed on official page",
+          "ongoing_filing": "Annual renewal via DET / investindubai.gov.ae portal",
+          "source_url": "https://deddxb.ae/services/issue-trade-license-2-2-2/",
+          "evidence": "It is a service requested by the customer in order to obtain an official approved document through which he can begin legally conducting business in the emirate. Normal License: A Memorandum of Association … and a site lease contract are required.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09",
+          "excerpt": "## Issue Trade license It is a service requested by the customer in order to obtain an official approved document through which he can begin legally conducting business in the emirate. During this service, the customer can issue a memorandum of association or a service agent contract in the legal form specified in the preliminary approval. **Trade licenses are classified as follows:** Normal License: A Memorandum of Association (which can be obtained electronically o",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 3,
+          "kind": "registration",
+          "name": "Ejari Tenancy Contract Registration (commercial premises lease)",
+          "authority": "Dubai Land Department (DLD)",
+          "cost": {
+            "min": 177.75,
+            "max": 220,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; same fee schedule applies on renewal",
+          "ongoing_filing": "Renew tenancy contract registration annually via Ejari / Dubai REST App or Real Estate Trustee Centre",
+          "source_url": "https://dubailand.gov.ae/en/eservices/register-renew-ejari-contract/",
+          "evidence": "AED 100 for registering a tenancy contract … AED 10 knowledge fee … AED 10 innovation fee … service partners' fees of AED 55 plus VAT … Total: 177.75 AED [app/web]; via Real Estate Services Trustee Centers … Total: 220 AED",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "100 for registering a tenancy contract 2) AED 10 knowledge fee 3) AED 10 innovation fee 4) In addition, the service partners’ fees of AED 55 plus a value-added tax (VAT) on the service partner fee of AED 2.75 Total: 177.75 AED via Real Estate Services Trustee Centers 1)AED 100 for registering a tenancy contract 2) AED 10 knowledge fee 3) AED 10 innovation fee 4) In addition, the service partners’ fees are AED 95 + VAT for the s ... rvices Trustee Centers 1)AED 100 for registering a tenancy contract 2) AED 10 knowledge fee 3) AED 10 innovation fee 4) In addition, the service partners’ fees are AED 95 + VAT for the service partners’ fees Total: 220 AED via real estate service trustees: 25 minutes (excluding waiting time) Registration through Real Estate Trustee Offices: 1- The property must not be managed by a real estate company or by an owner who has Ejari",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The costs are supported as the total fees for different registration methods.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 4,
+          "kind": "licence",
+          "name": "Food Establishment Licence – Coffee Shop / Cafeteria (Dubai Municipality Food Safety Department)",
+          "authority": "Dubai Municipality – Food Safety Department",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; renewal fee not confirmed on official page",
+          "ongoing_filing": "Annual renewal with Dubai Municipality Food Safety Department",
+          "source_url": "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf",
+          "evidence": "Food service license to prepare and serve hot and cold beverages; fresh juice; and display and sale of ready to eat snacks, sweets and ice cream Coffee Shop 5630001 ... 150 [sqm minimum]. Cafeteria 5610003 ... 200 (250 with shawarma).",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 5,
+          "kind": "inspection",
+          "name": "Layout Assessment / Pre-Opening Inspection for Food Establishment Licensing",
+          "authority": "Dubai Municipality – Food Safety Department",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Routine periodic inspections by Dubai Municipality Food Safety Department post-opening",
+          "source_url": "https://www.dm.gov.ae/municipality-business/food-safety-department-2/important-information-to-food-establishment/",
+          "evidence": "Below are the Our Services: … Request for Layout Assessment for Food Establishment Licensing; Apply to Accredit Food Related Establishment; Request for Permit Related to Food Activities",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 6,
+          "kind": "ongoing",
+          "name": "Food Handler Occupational Health Screening / Health Card (per food worker)",
+          "authority": "Dubai Health Authority (DHA)",
+          "cost": {
+            "min": 150,
+            "max": 150,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual per food handler; AED 150 per person per renewal",
+          "ongoing_filing": "Health cards must be renewed annually for each food handler at restaurants and similar establishments",
+          "source_url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2017/Administrative%20Resolution%20No.%20(93)%20of%202017%20Concerning%20Pricing%20of%20Occupational%20Health%20Screening%20Services.html",
+          "evidence": "150.00 | Food Handlers (at restaurants and similar establishments) | 9 … the fees set out in the Schedule attached hereto are approved. This Resolution comes into force on the day on which it is issued.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "ducts, textile factories, and ceramics factories | 5 | | 180.00 | Construction and metal workers | 6 | | 750.00 | DHA Licences for professionals in medicine-related fields | 7 | | 180.00 | Electrical services workers | 8 | | 150.00 | Food Handlers (at restaurants and similar establishments) | 9 | | 750.00 | Food handlers at His Highness the Ruler’s Court | 10 | | 180.00 | Persons working in glass industries | 11 | | 550.00 | Healthcare workers | ... ducts, textile factories, and ceramics factories | 5 | | 180.00 | Construction and metal workers | 6 | | 750.00 | DHA Licences for professionals in medicine-related fields | 7 | | 180.00 | Electrical services workers | 8 | | 150.00 | Food Handlers (at restaurants and similar establishments) | 9 | | 750.00 | Food handlers at His Highness the Ruler’s Court | 10 | | 180.00 | Persons working in glass industries | 11 | | 550.00 | Healthcare workers |",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee of 150 AED is explicitly listed for food handlers.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 7,
+          "kind": "licence",
+          "name": "Civil Defence Safety Permit (fire safety / NOC for food establishment fit-out)",
+          "authority": "Dubai Civil Defence (DCD)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; fee not confirmed on official page",
+          "ongoing_filing": null,
+          "source_url": "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf",
+          "evidence": "Other Government authority when it is applicable (DM: Building licensing, Planing, Drainge department, Civil defence department…)",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "Organization Unit: إ رةدا ﺳﻼﻣﺔ اﻟﻐﺬاء Food Safety Department / اﻟﻮﺣﺪة اﻟﺘﻨﻈﻴﻤﻴﺔ : Document title: ﻣﺘﻄﻠﺒﺎت ﺧﻴﺺﺮﺗ ﺳﺴﺎتاﻟﻤﺆ اﻟﻐﺬاﺋﻴﺔ ﺣﺴﺐ ﻧﻮع اﻟﻨﺸﺎط اﺳﻢ اﻟﻮﺛﻴﻘﺔ : Doc Ref: DM-FSD-GU69 رﻣﺰ اﻟﻮﺛﻴﻘﺔ : Pre- Approval Requested By Min. Food Area(sqf) Additional area might be required based on) equipment, storage, quantity of food (produced/processes DM Description Activity name Activity Code Food Safety Department Other Government authority when it is applicable(DM:Building Depends on process Trading license to import/export/sell baby food. Baby Food Trading 4721017 licensing ,Planing, Drainge department, Civil defence department…) Food Safety Department Other Government authority when it is applicable(DM:Building 200 LE5:G12icense to bake bread using traditional oven. Baker (Bread only) 4781003 licensing ,Planing, Drainge department, Civil defence dep",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 8,
+          "kind": "tax",
+          "name": "Corporate Tax Registration (EmaraTax)",
+          "authority": "Federal Tax Authority (FTA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Annual Corporate Tax Return (or simplified return if Small Business Relief elected) via EmaraTax, due within 9 months of end of tax period; records retained 7 years",
+          "source_url": "https://tax.gov.ae/datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf",
+          "evidence": "All Taxable Persons must register for Corporate Tax with the Federal Tax Authority (\"FTA\") on EmaraTax within the prescribed time limit. … Three months from the date of incorporation … All Taxable Persons must file a Tax Return … no later than nine months from the end of the relevant Tax Period.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "a small business register for Corporate Tax? - What are the exceptions to the requirement of registering for Corporate Tax? - What is the Corporate Tax rate for small business? - Which special reliefs are available to small business? - What are the conditions to be eligible for Small Business Relief? - How to make an election for Small Business Relief? - What are the other compliance requirements for small business under the Corporate Tax Law? 1 All Taxable Persons must register for Corporate Tax with the Federal Tax Authority (“FTA”) on EmaraTax1 within the prescribed time limit. A small business is considered to be a Taxable Person under the Corporate Tax Law if it conducts a Business or Business Activity and meets the conditions to be a Resident Person or Non-Resident Person2. The timeline for registration depends on whether the small business is conducted by a natural person or a jur",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a fee for registration, implying it is a free administrative process.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 9,
+          "kind": "tax",
+          "name": "VAT Registration (if taxable turnover exceeds AED 375,000)",
+          "authority": "Federal Tax Authority (FTA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Periodic VAT returns (typically quarterly) and payment of VAT due via EmaraTax; frequency determined by FTA upon registration",
+          "source_url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+          "evidence": "A BUSINESS MUST REGISTER IF: The total value of its taxable supplies and imports exceeds the mandatory registration threshold over the previous 12 months … The mandatory registration threshold is AED 375,000.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a fee for registration, implying it is a free administrative process.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 10,
+          "kind": "ongoing",
+          "name": "Annual Corporate Tax Return Filing (and Small Business Relief election if eligible)",
+          "authority": "Federal Tax Authority (FTA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Annual Tax Return via EmaraTax within 9 months of end of tax period; Small Business Relief (revenue ≤ AED 3M) election must be made in each return; records kept 7 years",
+          "source_url": "https://tax.gov.ae/en/media.centre/news/fta.confirms.taxable.persons.eligible.for.the.small.business.relief.must.submit.simplified.corporate.tax.returns.within.prescribed.legal.deadline.aspx",
+          "evidence": "Taxable Persons eligible for the Small Business Relief must continue to fulfil all their obligations under the Corporate Tax Law for each tax period … submit their Corporate Tax returns … and pay any Corporate Tax due within nine months of the end of their respective tax period or financial year.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "ust Submit Simplified Corporate Tax Returns Within Prescribed Legal Deadline Abdulaziz Al Mulla: The FTA continues to enhance its services in line with international best practices, facilitating accurate and efficient tax compliance. Corporate Tax registrants with a financial year ending on 31 December 2025 are urged to submit their tax returns by September 30 2026. Abu Dhabi, 3 August 2026: The Federal Tax Authority (FTA) has emphasised that Taxable Persons eligible for the Small Business Relief must continue to fulfil all their obligations under the Corporate Tax Law for each tax period. These obligations include registering for Corporate Tax, submitting simplified tax returns, and maintaining all relevant records to support the accuracy of the information provided in their tax returns or any other documents required to be submitted. Such records enable the FTA to verify Revenue, Ta",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a fee for filing, implying it is a free administrative process.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 11,
+          "kind": "ongoing",
+          "name": "Food Product Registration on Montaji+ (for any packaged/labelled food products sold in-café)",
+          "authority": "Dubai Municipality – Food Safety Department",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": null,
+          "ongoing_filing": "Product approvals and regulatory status tracking via Montaji+ platform as required when introducing new products",
+          "source_url": "https://www.dm.gov.ae/latest-digital-food-safety-services-showcased-at-gulfood-2025/",
+          "evidence": "Montaji+ is a food product regulation platform with a database of over 1.7 million registered products … manage product approvals, track regulatory status, and facilitate import and export operations.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 12,
+          "kind": "insurance",
+          "name": "Mandatory Business Insurance (workmen's compensation / employer liability)",
+          "authority": "Ministry of Human Resources and Emiratisation (MOHRE) / UAE Insurance Authority",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "AED"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual; premium not confirmed on official page",
+          "ongoing_filing": null,
+          "source_url": "https://deddxb.ae/services/issue-trade-license-2-2-2/",
+          "evidence": "Instant License: … with the option to issue a memorandum of association and a virtual site for the first year … the employment file opened allows employing three employees … issued together with … a Ministry of Human Resources and Emiratisation establishment card.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": false,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The source text does not mention a cost for this service.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        }
+      ],
+      "gaps": [
+        "Official fee for DET trade name reservation: not stated on any official page retrieved",
+        "Official fee for DET mainland trade licence issuance (initial and annual renewal): not stated on official DET/DED pages retrieved; fee schedule page (deddxb.ae fee schedule) was not accessible",
+        "Official processing time for DET mainland trade licence issuance: not confirmed (instant licence is 5 minutes but only applies to activities not requiring external approvals; café requires DM food safety external approval so instant licence is likely unavailable)",
+        "Official fee for Dubai Municipality Food Establishment Licence (Coffee Shop activity code 5630001 / Cafeteria 5610003): not stated on any official DM page retrieved",
+        "Official processing time for Dubai Municipality Food Establishment Licence: DM Unified Permit System quotes 10-minute service delivery for food permits at a counter, but end-to-end licensing timeline from application to approval is not stated",
+        "Official fee and processing time for Dubai Municipality Layout Assessment / pre-opening inspection for food establishments: not stated",
+        "Official fee and processing time for Civil Defence (DCD) fire safety NOC/permit for a food establishment fit-out: no DCD-specific official page retrieved; only referenced as 'applicable' in DM document",
+        "Whether the Coffee Shop (5630001, 150 sqm minimum) or Cafeteria (5610003, 200 sqm minimum) activity code applies to a small café: depends on specific business model; operator should confirm with DM Food Safety Department",
+        "Mandatory business insurance requirements (type, minimum coverage, insurer eligibility) for a food establishment in Dubai: no official UAE Insurance Authority or MOHRE official page retrieved confirming specific mandates and fees",
+        "Whether a small café below AED 375,000 annual revenue must still voluntarily register for VAT: voluntary registration threshold (AED 187,500) not confirmed from retrieved pages",
+        "Corporate Tax registration fee: official pages confirm process is via EmaraTax but do not state a registration fee; gap remains if any administrative fee applies",
+        "Annual DET trade licence renewal fee for a food & beverage activity: not confirmed from any retrieved official page",
+        "Health card (DHA food handler screening) renewal processing time: not stated on the retrieved DHA legislative fee schedule",
+        "Calorie declaration / labelling compliance obligations under Dubai Municipality Al Riyada programme: referenced on DM website but detailed requirements and compliance deadlines not extracted",
+        "Ejari tenancy contract registration processing time (online channel): only 'immediate' stated for Ejari user account registration, not for the tenancy contract registration itself via Dubai REST App"
+      ],
+      "summary": {
+        "cost_min": 177.75,
+        "cost_max": 220,
+        "currency": "AED",
+        "cost_items_unknown": 6,
+        "time_min_days": 0,
+        "time_max_days": null,
+        "time_items_unknown": 9,
+        "time_longest_step_days": null,
+        "steps": 9,
+        "usd_min": 48,
+        "usd_max": 60,
+        "items_unknown": {
+          "cost": 6,
+          "time": 9
+        },
+        "verified": 12,
+        "gemini": {
+          "checked": 12,
+          "supported": 12,
+          "partly": 0,
+          "unsupported": 0,
+          "currency_unsure": 0,
+          "corrected": 0
+        },
+        "gaps": 15,
+        "confidence": 0.4444444444444444,
+        "renewals": [
+          {
+            "name": "Commercial Trade Licence (Food & Beverage Activity) – DET Mainland",
+            "renewal": "Annual; renewal fee not confirmed on official page",
+            "source_url": "https://deddxb.ae/services/issue-trade-license-2-2-2/"
+          },
+          {
+            "name": "Ejari Tenancy Contract Registration (commercial premises lease)",
+            "renewal": "Annual; same fee schedule applies on renewal",
+            "source_url": "https://dubailand.gov.ae/en/eservices/register-renew-ejari-contract/"
+          },
+          {
+            "name": "Food Establishment Licence – Coffee Shop / Cafeteria (Dubai Municipality Food Safety Department)",
+            "renewal": "Annual; renewal fee not confirmed on official page",
+            "source_url": "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf"
+          },
+          {
+            "name": "Food Handler Occupational Health Screening / Health Card (per food worker)",
+            "renewal": "Annual per food handler; AED 150 per person per renewal",
+            "source_url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2017/Administrative%20Resolution%20No.%20(93)%20of%202017%20Concerning%20Pricing%20of%20Occupational%20Health%20Screening%20Services.html"
+          },
+          {
+            "name": "Civil Defence Safety Permit (fire safety / NOC for food establishment fit-out)",
+            "renewal": "Annual; fee not confirmed on official page",
+            "source_url": "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf"
+          },
+          {
+            "name": "Mandatory Business Insurance (workmen's compensation / employer liability)",
+            "renewal": "Annual; premium not confirmed on official page",
+            "source_url": "https://deddxb.ae/services/issue-trade-license-2-2-2/"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "Commercial Trade Licence (Food & Beverage Activity) – DET Mainland",
+            "filing": "Annual renewal via DET / investindubai.gov.ae portal",
+            "source_url": "https://deddxb.ae/services/issue-trade-license-2-2-2/"
+          },
+          {
+            "name": "Ejari Tenancy Contract Registration (commercial premises lease)",
+            "filing": "Renew tenancy contract registration annually via Ejari / Dubai REST App or Real Estate Trustee Centre",
+            "source_url": "https://dubailand.gov.ae/en/eservices/register-renew-ejari-contract/"
+          },
+          {
+            "name": "Food Establishment Licence – Coffee Shop / Cafeteria (Dubai Municipality Food Safety Department)",
+            "filing": "Annual renewal with Dubai Municipality Food Safety Department",
+            "source_url": "https://dmpmedia.dm.gov.ae/uploads/2025/07/DM-FSD-GU69-Food-Establishment-Requirements-Based-on-Activity.pdf"
+          },
+          {
+            "name": "Layout Assessment / Pre-Opening Inspection for Food Establishment Licensing",
+            "filing": "Routine periodic inspections by Dubai Municipality Food Safety Department post-opening",
+            "source_url": "https://www.dm.gov.ae/municipality-business/food-safety-department-2/important-information-to-food-establishment/"
+          },
+          {
+            "name": "Food Handler Occupational Health Screening / Health Card (per food worker)",
+            "filing": "Health cards must be renewed annually for each food handler at restaurants and similar establishments",
+            "source_url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2017/Administrative%20Resolution%20No.%20(93)%20of%202017%20Concerning%20Pricing%20of%20Occupational%20Health%20Screening%20Services.html"
+          },
+          {
+            "name": "Corporate Tax Registration (EmaraTax)",
+            "filing": "Annual Corporate Tax Return (or simplified return if Small Business Relief elected) via EmaraTax, due within 9 months of end of tax period; records retained 7 years",
+            "source_url": "https://tax.gov.ae/datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf"
+          },
+          {
+            "name": "VAT Registration (if taxable turnover exceeds AED 375,000)",
+            "filing": "Periodic VAT returns (typically quarterly) and payment of VAT due via EmaraTax; frequency determined by FTA upon registration",
+            "source_url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx"
+          },
+          {
+            "name": "Annual Corporate Tax Return Filing (and Small Business Relief election if eligible)",
+            "filing": "Annual Tax Return via EmaraTax within 9 months of end of tax period; Small Business Relief (revenue ≤ AED 3M) election must be made in each return; records kept 7 years",
+            "source_url": "https://tax.gov.ae/en/media.centre/news/fta.confirms.taxable.persons.eligible.for.the.small.business.relief.must.submit.simplified.corporate.tax.returns.within.prescribed.legal.deadline.aspx"
+          },
+          {
+            "name": "Food Product Registration on Montaji+ (for any packaged/labelled food products sold in-café)",
+            "filing": "Product approvals and regulatory status tracking via Montaji+ platform as required when introducing new products",
+            "source_url": "https://www.dm.gov.ae/latest-digital-food-safety-services-showcased-at-gulfood-2025/"
+          }
+        ]
+      }
+    },
+    {
+      "place": "London, United Kingdom",
+      "research_run_id": "01a1c024-68b3-7691-a36f-4f8f6b9c5cac",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-06-25",
+        "sources_with_dates": 30,
+        "sources_without_dates": 1,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T11:51:38.228Z"
+      },
+      "all_citations": [
+        "https://www.gov.uk/guidance/food-business-registration",
+        "https://www.gov.uk/guidance/starting-a-food-business",
+        "https://www.gov.uk/running-food-business",
+        "https://www.gov.uk/employers-liability-insurance",
+        "https://www.gov.uk/government/publications/alcohol-licensing-fee-levels/main-fee-levels",
+        "https://www.gov.uk/find-licences/premises-licence",
+        "https://www.gov.uk/running-food-business/staff-training-illness-hygiene",
+        "https://www.gov.uk/workplace-fire-safety-your-responsibilities/fire-risk-assessments",
+        "https://www.gov.uk/become-sole-trader/register-sole-trader",
+        "https://www.gov.uk/register-for-vat",
+        "https://www.gov.uk/introduction-to-business-rates",
+        "https://companieshouse.blog.gov.uk/2018/10/01/how-to-open-a-coffee-shop/",
+        "https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees",
+        "https://www.gov.uk/food-safety-management-systems",
+        "https://www.gov.uk/business-rates-relief/small-business-rate-relief",
+        "https://www.gov.uk/government/collections/fire-safety-legislation-guidance-for-those-with-legal-duties",
+        "https://www.gov.uk/government/publications/food-hygiene-rating-scheme-fhrs-guidance-for-businesses/food-hygiene-rating-scheme-fhrs-guidance-for-businesses",
+        "https://www.gov.uk/government/news/companies-house-fees-are-changing-from-1-february-2026",
+        "https://www.gov.uk/limited-company-formation/register-your-company",
+        "https://www.gov.uk/running-food-business/food-inspections",
+        "https://www.gov.uk/government/publications/food-hygiene-rating-scheme/food-hygiene-rating-scheme",
+        "https://www.gov.uk/government/publications/safer-food-better-business-for-caterers/safer-food-better-business-for-caterers",
+        "https://www.gov.uk/government/publications/pavement-licences-guidance/pavement-licences-guidance",
+        "https://www.gov.uk/government/publications/vat-notice-7001-should-i-be-registered-for-vat/vat-notice-7001-should-i-be-registered-for-vat",
+        "https://www.gov.uk/workplace-fire-safety-your-responsibilities/enforcement-appeals-and-penalties",
+        "https://www.gov.uk/government/publications/pavement-licences-guidance",
+        "https://www.gov.uk/register-employer",
+        "https://www.gov.uk/paye-for-employers",
+        "https://www.gov.uk/guidance/filing-your-companys-confirmation-statement",
+        "https://www.gov.uk/government/publications/user-guide-to-alcohol-and-late-night-refreshment-licensing-statistics/user-guide-to-alcohol-and-late-night-refreshment-licensing-statistics-accessible-version",
+        "https://www.gov.uk/government/publications/training-aide-memoire-for-aggregator-onboarding/training-aide-memoire-for-aggregator-onboarding"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "registration",
+          "name": "Food Business Registration with Local Authority",
+          "authority": "London Borough local authority (e.g. relevant London Borough Council)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": 28,
+            "max": 28
+          },
+          "renewal": "No renewal required; notify local authority of material changes",
+          "ongoing_filing": null,
+          "source_url": "https://www.gov.uk/guidance/food-business-registration",
+          "evidence": "\"You are required to register at least 28 days before trading. We recommend that you do not register too early, but that you wait until 28 days before you are ready to start your operations.\"",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The registration itself is free, and the 28-day notice period is correctly identified.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 2,
+          "kind": "registration",
+          "name": "Business Structure Registration – Sole Trader Self Assessment (HMRC) or Limited Company (Companies House)",
+          "authority": "HMRC (sole trader) or Companies House (limited company)",
+          "cost": {
+            "min": 100,
+            "max": 124,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 10
+          },
+          "renewal": "Limited company: annual confirmation statement £50 online / £110 paper (from 1 Feb 2026). Sole trader: no renewal fee.",
+          "ongoing_filing": "Limited company: confirmation statement once per year (£50 online from 1 Feb 2026). Sole trader: Self Assessment tax return annually.",
+          "source_url": "https://www.gov.uk/limited-company-formation/register-your-company",
+          "evidence": "\"It costs £100 and can be paid by debit or credit card. Your company is usually registered within 24 hours.\" Postal applications take 8 to 10 days and cost £124.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "sonal code you received after verifying your identity to register your company. This guide is also available in Welsh (Cymraeg). You’ll also confirm your people with significant control (PSC) during registration. For example, this could be anyone with more than 25% of the shares or voting rights. You’ll get a ‘certificate of incorporation’. This confirms the company legally exists and shows the company number and date of formation. It costs £100 and can be paid by debit or credit card. Your company is usually registered within 24 hours. You can also use this service to: * register for PAYE to tell HMRC you’re employing staff (including yourself if you’re the only director) * continue an application if you’ve already started registering If you do not want to use ‘limited’ in your company name you must register by post. Register now You’ll need to create a Government Gateway user",
+          "gemini": {
+            "verdict": "partly",
+            "note": "The postal application fee is £124, which exceeds the claimed maximum of £100.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": true
+          },
+          "cost_unsupported": {
+            "min": 0,
+            "max": 100,
+            "currency": "GBP"
+          },
+          "cost_corrected": true
+        },
+        {
+          "step": 3,
+          "kind": "ongoing",
+          "name": "Companies House Annual Confirmation Statement (limited companies only)",
+          "authority": "Companies House",
+          "cost": {
+            "min": 50,
+            "max": 50,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annually; £50 online or £110 by post (fees updated 1 February 2026)",
+          "ongoing_filing": "Confirmation statement filed at least once every 12 months; only the first filing in each payment period requires the fee.",
+          "source_url": "https://www.gov.uk/guidance/filing-your-companys-confirmation-statement",
+          "evidence": "\"It costs: £50 to file your confirmation statement online\" and \"1 February 2026 — Fees updated.\" and \"You can be fined up to £5,000 and your company may be struck off if you do not file your confirmation statement.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "iod has ended before filing your confirmation statement. If you file early, you will need to choose a new confirmation statement date. Your next review period will start the day after this date. ## Annual fee It costs: * £50 to file your confirmation statement online * £110 to file a paper form CS01 by post ## Payment period Your payment period is separate from your review period. It tells you when your annual fee is due. A payment period c ... iod has ended before filing your confirmation statement. If you file early, you will need to choose a new confirmation statement date. Your next review period will start the day after this date. ## Annual fee It costs: * £50 to file your confirmation statement online * £110 to file a paper form CS01 by post ## Payment period Your payment period is separate from your review period. It tells you when your annual fee is due. A payment period c",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The online fee is £50; the paper fee is higher but the claim specifies the online cost.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 4,
+          "kind": "licence",
+          "name": "Premises Licence (Licensing Act 2003) – required if selling alcohol or serving hot food/drinks between 11pm and 5am",
+          "authority": "London Borough Council licensing authority",
+          "cost": {
+            "min": 100,
+            "max": 1905,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": 28,
+            "max": null
+          },
+          "renewal": "Licence is of unlimited duration; annual charge payable: £70 (Band A) to £350 (Band E)",
+          "ongoing_filing": "Annual fee payment to licensing authority; display of licence summary on premises at all times.",
+          "source_url": "https://www.gov.uk/find-licences/premises-licence",
+          "evidence": "\"You must display your 'application notice' at or on the premises for 28 days from the day after it was submitted.\" Application fees range from £100 to £1,905 depending on fee band. \"Most premises licences have an unlimited duration but you will have to pay an annual fee.\"",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "Contact your council for a premises licence. You’ll need to provide: * your details * details of the DPS * a detailed plan of the premises * an operating schedule, for example hours when alcohol will be sold You must display your ‘application notice’ at or on the premises for 28 days from the day after it was submitted. ### Licence fees You’ll be charged a fee that’s based on the rateable value of the property. Application fees range from £100 to £1,905, depending on the fee band of your venue. If your premises doesn’t have a rateable value it will fall into the lowest fee band. ## Displaying your licence You must display the ‘licence summary’ at your premises where it can be easily seen. The other pages of the licence should be kept safely at the premises. Police or council officers can ask to inspect them at any time. ## Length of licence Most premises licences have an unli",
+          "cost_unsupported": {
+            "min": 100,
+            "max": 635,
+            "currency": "GBP"
+          },
+          "gemini": {
+            "verdict": "partly",
+            "note": "The maximum fee is £1,905, not £100.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": true
+          },
+          "cost_corrected": true
+        },
+        {
+          "step": 5,
+          "kind": "tax",
+          "name": "HMRC Self Assessment Registration (sole trader) / PAYE Employer Registration (if employing staff)",
+          "authority": "HM Revenue & Customs (HMRC)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "No renewal; ongoing payroll submissions on or before each payday (PAYE); annual Self Assessment return (sole trader).",
+          "ongoing_filing": "PAYE: Full Payment Submission to HMRC on or before each payday; payment to HMRC usually monthly. Self Assessment: annual tax return.",
+          "source_url": "https://www.gov.uk/register-employer",
+          "evidence": "\"You must register before the first payday to get your employer PAYE reference number... You cannot register more than 2 months before you start paying people.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "Registration for these services is free.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 6,
+          "kind": "tax",
+          "name": "VAT Registration (mandatory when taxable turnover exceeds £90,000 threshold)",
+          "authority": "HM Revenue & Customs (HMRC)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": 40
+          },
+          "renewal": "No renewal; ongoing quarterly (or monthly) VAT returns and payments.",
+          "ongoing_filing": "VAT Return submitted to HMRC each quarter (or monthly if opted); payment of VAT due.",
+          "source_url": "https://www.gov.uk/register-for-vat",
+          "evidence": "\"You must register if either: your total taxable turnover for the last 12 months goes over £90,000 (the VAT threshold)\" and \"You have to register within 30 days of the end of the month when you went over the threshold.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "VAT registration is free; the 40-day claim is not explicitly contradicted by the 30-day requirement.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 7,
+          "kind": "insurance",
+          "name": "Employers' Liability Insurance (mandatory as soon as first employee is hired)",
+          "authority": "Financial Conduct Authority (authorised insurer); enforced by Health & Safety Executive",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual renewal; must be maintained continuously. Fine of £2,500 per day if not properly insured.",
+          "ongoing_filing": "EL certificate must be displayed where employees can access it; shown to inspectors on request (failure = £1,000 fine).",
+          "source_url": "https://www.gov.uk/employers-liability-insurance",
+          "evidence": "\"You must get Employers' Liability (EL) insurance: as soon as you become an employer; to cover you for at least £5 million; from an authorised insurer\" and \"You can be fined £2,500 every day you are not properly insured.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is not a government fee but a private insurance premium.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 8,
+          "kind": "inspection",
+          "name": "Food Hygiene Inspection & Food Hygiene Rating (Food Hygiene Rating Scheme)",
+          "authority": "London Borough Council (Environmental Health / Food Safety team)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Recurring; frequency depends on risk rating: every 6 months (highest risk) to every 2 years (lowest risk). No fee for first inspection; re-rating inspection fee varies by local authority.",
+          "ongoing_filing": "Businesses must maintain and make available food safety management records (HACCP-based) at every inspection.",
+          "source_url": "https://www.gov.uk/guidance/starting-a-food-business",
+          "evidence": "\"higher risk businesses will be prioritised over low-risk businesses, and in some cases it may be several months until your business receives their first inspection.\" Rating 0–5 given after each inspection.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The inspection and rating scheme is provided by the local authority at no cost to the business.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 9,
+          "kind": "ongoing",
+          "name": "Food Safety Management System (HACCP-based) – mandatory written system",
+          "authority": "Food Standards Agency / Local Authority enforcement",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Ongoing; must be maintained and reviewed continuously. FSA provides free 'Safer Food, Better Business' pack for caterers.",
+          "ongoing_filing": "Records of food safety checks, temperature logs, cleaning schedules, staff training, allergen controls must be kept and made available at inspection.",
+          "source_url": "https://www.gov.uk/food-safety-management-systems",
+          "evidence": "\"If you run a food business, you need to have a food safety management system to make sure your food is safe to eat. Your food safety management system must meet the Hazard Analysis and Critical Control Point (HACCP) principles.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The requirement is for a system, which does not carry a government fee.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 10,
+          "kind": "inspection",
+          "name": "Fire Risk Assessment (mandatory written assessment under Regulatory Reform (Fire Safety) Order 2005)",
+          "authority": "London Fire Brigade (enforcement); responsible person carries out assessment",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Must be regularly reviewed; re-inspection by fire authority as needed. No statutory fee for initial assessment if done in-house.",
+          "ongoing_filing": "Written fire risk assessment record must be kept on premises; emergency plan and staff fire safety training records maintained.",
+          "source_url": "https://www.gov.uk/workplace-fire-safety-your-responsibilities/fire-risk-assessments",
+          "evidence": "\"As the responsible person you must carry out and regularly review a fire risk assessment of the premises... You must keep a written record of your fire risk assessment.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The requirement is for an assessment, which does not carry a government fee.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 11,
+          "kind": "tax",
+          "name": "Business Rates – non-domestic property tax payable to London Borough Council",
+          "authority": "London Borough Council (billing authority); Valuation Office Agency (rateable value)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual bill issued February/March each year. Small business relief available (100% relief if rateable value ≤ £12,000; tapered to £15,000). London: total rateable value threshold £28,000 for relief continuation.",
+          "ongoing_filing": "Annual business rates payment (usually 10 monthly instalments); report changes in circumstances to local council.",
+          "source_url": "https://www.gov.uk/introduction-to-business-rates",
+          "evidence": "\"Your local council will send you a business rates bill in February or March each year. This is for the following tax year.\" Small business multiplier 43.2p; retail/hospitality/leisure multiplier 38.2p from 1 April 2026 to 31 March 2027.",
+          "status": "found",
+          "verification": "quote_not_on_page",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "supported",
+            "note": "Business rates are a tax, not a fixed fee.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 12,
+          "kind": "licence",
+          "name": "Pavement Licence – if placing tables/chairs on the public highway outside the café",
+          "authority": "London Borough Council",
+          "cost": {
+            "min": 0,
+            "max": 500,
+            "currency": "GBP"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Licence valid up to 2 years; renewal fee capped at £350.",
+          "ongoing_filing": "Compliance with licence conditions; licence must be displayed or produced on request.",
+          "source_url": "https://www.gov.uk/government/publications/pavement-licences-guidance/pavement-licences-guidance",
+          "evidence": "\"Fees are capped at a maximum of £500 for first time applications and £350 for renewals.\" \"Licences that are deemed to have been granted, should remain in place for such period as the local authority may specify in the licence, with a maximum limit of two years.\"",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "bjects or structures on the highway are otherwise granted primarily under Part 7A of the Highways Act 1980. The fee for the Highways Act process varies between local authorities, and there is a minimum 28 calendar day consultation period. The Business and Planning Act process provides a cheaper, easier, and quicker way for businesses to obtain a licence. The fee for applying for a licence under the Business and Planning Act process is capped at £500 for first time applications and £350 for renewals and the public consultation period is 14 days (excluding public holidays), starting the day after the application is sent electronically to the authority. If the local authority does not determine the application before the end of the determination period (which is 14 days beginning with the first day after the end of the public consultation period, excluding public holidays), the licence is",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee is capped at £500 for new applications.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        }
+      ],
+      "gaps": [
+        "Premises licence (step 4): processing time beyond the mandatory 28-day public notice period is not stated on an official page – the total determination period (including any hearing) is not confirmed with a specific number of days from an official source.",
+        "Premises licence (step 4): whether a small café serving hot food only during daytime (before 11pm) and no alcohol needs a premises licence at all depends on operational facts; if neither alcohol nor late-night refreshment is served, no premises licence is required – operator must self-assess based on actual licensable activities.",
+        "Premises licence (step 4): Band A applies to rateable values up to £4,300; most London cafés will likely fall into higher bands (B or C), making the actual fee band unclear without knowing the specific rateable value of the premises.",
+        "Employers' Liability Insurance (step 7): official premium cost range not stated on any official government page – cost depends on insurer and business specifics.",
+        "Fire Risk Assessment (step 10): cost of hiring a professional risk assessor ('competent person') is not stated on any official government page.",
+        "Food Hygiene Inspection (step 8): official processing time for first inspection of a new business is not stated – GOV.UK notes only that 'it may be several months' for lower-risk businesses.",
+        "Food Hygiene re-rating inspection fee (step 8): local authority re-rating inspection fee is not confirmed on a national official page; varies by London Borough.",
+        "PAYE registration processing time (step 5): GOV.UK states the employer PAYE reference number is 'sent to you in a letter' but does not give an official number of days for processing.",
+        "VAT registration processing time (step 6): GOV.UK VAT Notice 700/1 states to contact HMRC if no response after 40 working days, but does not state a guaranteed processing time.",
+        "Business rates (step 11): actual rateable value and resulting bill for a specific London café premises cannot be confirmed without a Valuation Office Agency assessment; small business relief eligibility depends on rateable value.",
+        "Personal licence (Licensing Act 2003): if the café intends to sell alcohol, a Designated Premises Supervisor holding a personal licence (application fee £37) is also required – not included as a separate step as it depends on whether alcohol is sold.",
+        "Companies House confirmation statement (step 3): processing time for filing acceptance is not stated on the official guidance page.",
+        "Pavement licence (step 12): determination period (number of days from application to decision) under the permanent regime is not confirmed with a specific number of days from an official source in the evidence reviewed.",
+        "Public liability insurance: not mandated by statute for most cafés (unlike EL insurance) but widely required by landlords and recommended commercially – no official fee or processing time available."
+      ],
+      "summary": {
+        "cost_min": 200,
+        "cost_max": 2529,
+        "currency": "GBP",
+        "cost_items_unknown": 3,
+        "time_min_days": 97,
+        "time_max_days": 106,
+        "time_items_unknown": 6,
+        "time_longest_step_days": 40,
+        "steps": 10,
+        "usd_min": 267,
+        "usd_max": 3379,
+        "items_unknown": {
+          "cost": 3,
+          "time": 6
+        },
+        "verified": 11,
+        "gemini": {
+          "checked": 12,
+          "supported": 10,
+          "partly": 2,
+          "unsupported": 0,
+          "currency_unsure": 0,
+          "corrected": 2
+        },
+        "gaps": 14,
+        "confidence": 0.4230769230769231,
+        "renewals": [
+          {
+            "name": "Food Business Registration with Local Authority",
+            "renewal": "No renewal required; notify local authority of material changes",
+            "source_url": "https://www.gov.uk/guidance/food-business-registration"
+          },
+          {
+            "name": "Business Structure Registration – Sole Trader Self Assessment (HMRC) or Limited Company (Companies House)",
+            "renewal": "Limited company: annual confirmation statement £50 online / £110 paper (from 1 Feb 2026). Sole trader: no renewal fee.",
+            "source_url": "https://www.gov.uk/limited-company-formation/register-your-company"
+          },
+          {
+            "name": "Companies House Annual Confirmation Statement (limited companies only)",
+            "renewal": "Annually; £50 online or £110 by post (fees updated 1 February 2026)",
+            "source_url": "https://www.gov.uk/guidance/filing-your-companys-confirmation-statement"
+          },
+          {
+            "name": "Premises Licence (Licensing Act 2003) – required if selling alcohol or serving hot food/drinks between 11pm and 5am",
+            "renewal": "Licence is of unlimited duration; annual charge payable: £70 (Band A) to £350 (Band E)",
+            "source_url": "https://www.gov.uk/find-licences/premises-licence"
+          },
+          {
+            "name": "HMRC Self Assessment Registration (sole trader) / PAYE Employer Registration (if employing staff)",
+            "renewal": "No renewal; ongoing payroll submissions on or before each payday (PAYE); annual Self Assessment return (sole trader).",
+            "source_url": "https://www.gov.uk/register-employer"
+          },
+          {
+            "name": "VAT Registration (mandatory when taxable turnover exceeds £90,000 threshold)",
+            "renewal": "No renewal; ongoing quarterly (or monthly) VAT returns and payments.",
+            "source_url": "https://www.gov.uk/register-for-vat"
+          },
+          {
+            "name": "Employers' Liability Insurance (mandatory as soon as first employee is hired)",
+            "renewal": "Annual renewal; must be maintained continuously. Fine of £2,500 per day if not properly insured.",
+            "source_url": "https://www.gov.uk/employers-liability-insurance"
+          },
+          {
+            "name": "Food Hygiene Inspection & Food Hygiene Rating (Food Hygiene Rating Scheme)",
+            "renewal": "Recurring; frequency depends on risk rating: every 6 months (highest risk) to every 2 years (lowest risk). No fee for first inspection; re-rating inspection fee varies by local authority.",
+            "source_url": "https://www.gov.uk/guidance/starting-a-food-business"
+          },
+          {
+            "name": "Food Safety Management System (HACCP-based) – mandatory written system",
+            "renewal": "Ongoing; must be maintained and reviewed continuously. FSA provides free 'Safer Food, Better Business' pack for caterers.",
+            "source_url": "https://www.gov.uk/food-safety-management-systems"
+          },
+          {
+            "name": "Fire Risk Assessment (mandatory written assessment under Regulatory Reform (Fire Safety) Order 2005)",
+            "renewal": "Must be regularly reviewed; re-inspection by fire authority as needed. No statutory fee for initial assessment if done in-house.",
+            "source_url": "https://www.gov.uk/workplace-fire-safety-your-responsibilities/fire-risk-assessments"
+          },
+          {
+            "name": "Business Rates – non-domestic property tax payable to London Borough Council",
+            "renewal": "Annual bill issued February/March each year. Small business relief available (100% relief if rateable value ≤ £12,000; tapered to £15,000). London: total rateable value threshold £28,000 for relief continuation.",
+            "source_url": "https://www.gov.uk/introduction-to-business-rates"
+          },
+          {
+            "name": "Pavement Licence – if placing tables/chairs on the public highway outside the café",
+            "renewal": "Licence valid up to 2 years; renewal fee capped at £350.",
+            "source_url": "https://www.gov.uk/government/publications/pavement-licences-guidance/pavement-licences-guidance"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "Business Structure Registration – Sole Trader Self Assessment (HMRC) or Limited Company (Companies House)",
+            "filing": "Limited company: confirmation statement once per year (£50 online from 1 Feb 2026). Sole trader: Self Assessment tax return annually.",
+            "source_url": "https://www.gov.uk/limited-company-formation/register-your-company"
+          },
+          {
+            "name": "Companies House Annual Confirmation Statement (limited companies only)",
+            "filing": "Confirmation statement filed at least once every 12 months; only the first filing in each payment period requires the fee.",
+            "source_url": "https://www.gov.uk/guidance/filing-your-companys-confirmation-statement"
+          },
+          {
+            "name": "Premises Licence (Licensing Act 2003) – required if selling alcohol or serving hot food/drinks between 11pm and 5am",
+            "filing": "Annual fee payment to licensing authority; display of licence summary on premises at all times.",
+            "source_url": "https://www.gov.uk/find-licences/premises-licence"
+          },
+          {
+            "name": "HMRC Self Assessment Registration (sole trader) / PAYE Employer Registration (if employing staff)",
+            "filing": "PAYE: Full Payment Submission to HMRC on or before each payday; payment to HMRC usually monthly. Self Assessment: annual tax return.",
+            "source_url": "https://www.gov.uk/register-employer"
+          },
+          {
+            "name": "VAT Registration (mandatory when taxable turnover exceeds £90,000 threshold)",
+            "filing": "VAT Return submitted to HMRC each quarter (or monthly if opted); payment of VAT due.",
+            "source_url": "https://www.gov.uk/register-for-vat"
+          },
+          {
+            "name": "Employers' Liability Insurance (mandatory as soon as first employee is hired)",
+            "filing": "EL certificate must be displayed where employees can access it; shown to inspectors on request (failure = £1,000 fine).",
+            "source_url": "https://www.gov.uk/employers-liability-insurance"
+          },
+          {
+            "name": "Food Hygiene Inspection & Food Hygiene Rating (Food Hygiene Rating Scheme)",
+            "filing": "Businesses must maintain and make available food safety management records (HACCP-based) at every inspection.",
+            "source_url": "https://www.gov.uk/guidance/starting-a-food-business"
+          },
+          {
+            "name": "Food Safety Management System (HACCP-based) – mandatory written system",
+            "filing": "Records of food safety checks, temperature logs, cleaning schedules, staff training, allergen controls must be kept and made available at inspection.",
+            "source_url": "https://www.gov.uk/food-safety-management-systems"
+          },
+          {
+            "name": "Fire Risk Assessment (mandatory written assessment under Regulatory Reform (Fire Safety) Order 2005)",
+            "filing": "Written fire risk assessment record must be kept on premises; emergency plan and staff fire safety training records maintained.",
+            "source_url": "https://www.gov.uk/workplace-fire-safety-your-responsibilities/fire-risk-assessments"
+          },
+          {
+            "name": "Business Rates – non-domestic property tax payable to London Borough Council",
+            "filing": "Annual business rates payment (usually 10 monthly instalments); report changes in circumstances to local council.",
+            "source_url": "https://www.gov.uk/introduction-to-business-rates"
+          },
+          {
+            "name": "Pavement Licence – if placing tables/chairs on the public highway outside the café",
+            "filing": "Compliance with licence conditions; licence must be displayed or produced on request.",
+            "source_url": "https://www.gov.uk/government/publications/pavement-licences-guidance/pavement-licences-guidance"
+          }
+        ]
+      }
+    },
+    {
+      "place": "Singapore",
+      "research_run_id": "01a1c024-5d1a-7f7d-8f0a-9bc5cfbbe7c1",
+      "notes": [],
+      "level": "full",
+      "status": "COMPLETED",
+      "termination_reason": "planner_done",
+      "freshness": {
+        "latest_published_date": "2026-10-13",
+        "sources_with_dates": 12,
+        "sources_without_dates": 13,
+        "sources_in_requested_window": 0,
+        "fetched_at_latest": "2026-11-09T11:51:36.032Z"
+      },
+      "all_citations": [
+        "https://www.sfa.gov.sg/food-retail/licence-permit/requirements-for-licence-permit-for-food-retail",
+        "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail",
+        "https://www.sfa.gov.sg/food-retail/licence-permit/businesses-that-need-licence-permit-for-food-retail",
+        "https://licensing.gobusiness.gov.sg/licence-directory/sfa/food-shop-licence",
+        "https://www.sfa.gov.sg/food-handler-hygiene-officer/requirements-for-food-handler-hygiene-officer/requirements-for-food-handlers",
+        "https://www.sfa.gov.sg/food-handler-hygiene-officer/requirements-for-food-handler-hygiene-officer/requirements-for-food-hygiene-officers",
+        "https://www.sfa.gov.sg/food-handler-hygiene-officer/training-courses/wsq-food-safety-course-level-1",
+        "https://www.sfa.gov.sg/docs/default-source/default-document-library/self-checklist_foodshop.pdf",
+        "https://licensing.gobusiness.gov.sg/licence-directory/scdf/fire-certificate",
+        "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst",
+        "https://www.cpf.gov.sg/employer/making-cpf-contributions/applying-for-a-cpf-submission-number",
+        "https://www.sfa.gov.sg/food-retail/licence-permit/update-renew-cancel-licence-permit-for-food-retail",
+        "https://www.gobusiness.gov.sg/resources/start-up-guide/register-your-business",
+        "https://www.acra.gov.sg/register/business/registering-different-business-structures/sole-proprietorship-or-partnership/",
+        "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/service-transaction-fees/",
+        "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/applying-for-gst-registration",
+        "https://www.mom.gov.sg/workplace-safety-and-health/work-injury-compensation/work-injury-compensation-insurance",
+        "https://licensing.gobusiness.gov.sg/licence-directory/ura/change-of-use-approval",
+        "https://www.ura.gov.sg/guidelines/property-and-business-owners/business-owners/change-use-of-property-for-business/",
+        "https://www.sfa.gov.sg/food-for-thought/article/detail/pre-licensing-inspections-speeding-business-up-with-technology",
+        "https://www.sfa.gov.sg/food-handler-hygiene-officer/training-courses/wsq-food-safety-course-level-3",
+        "https://www.cpf.gov.sg/service/article/how-long-does-it-take-to-process-the-apply-for-cpf-submission-number-online-application",
+        "https://www.cpf.gov.sg/service/article/when-and-how-do-i-obtain-my-cpf-submission-number-csn-as-a-new-employer",
+        "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/goods-and-services-tax-(gst)-what-it-is-and-how-it-works",
+        "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/key-requirements-common-offences/renewing-your-registration/"
+      ],
+      "items": [
+        {
+          "step": 1,
+          "kind": "registration",
+          "name": "Business Registration with ACRA (Sole Proprietorship / Company)",
+          "authority": "Accounting and Corporate Regulatory Authority (ACRA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 60
+          },
+          "renewal": "Annually at SGD 30 (1-year) or SGD 90 (3-year); immediate approval via Bizfile",
+          "ongoing_filing": "Renewal before expiry each year (or every 3 years); no separate annual return for sole proprietorships",
+          "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/service-transaction-fees/",
+          "evidence": "Setup cost: Apply for new business entity name — $15; Register new business entity — $100",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "cost_unsupported": {
+            "min": 115,
+            "max": 115,
+            "currency": "SGD"
+          },
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The quote provides specific fees for registration and naming, not a range, and the processing time is not mentioned.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": false
+          }
+        },
+        {
+          "step": 2,
+          "kind": "licence",
+          "name": "URA Change of Use Approval (if premises not already approved for F&B use)",
+          "authority": "Urban Redevelopment Authority (URA)",
+          "cost": {
+            "min": 500,
+            "max": 500,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 60
+          },
+          "renewal": "Planning permission typically valid 3 years or longer; no ongoing renewal fee stated",
+          "ongoing_filing": null,
+          "source_url": "https://www.ura.gov.sg/guidelines/property-and-business-owners/business-owners/change-use-of-property-for-business/",
+          "evidence": "The processing fees for a change of use application is $500. Processing fees are collected to account for the efforts done to process the case and are non-refundable. It generally takes 10 working days to assess your application.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "cation can be submitted by the business owner, landlord, consultant or a Qualified Person (QP) via GoBusiness Singapore (opens in new tab). ### How much does it cost? The processing fees for a change of use application is $500. ### Can processing fees be refunded? Processing fees are collected to account for the efforts done to process the case and are non-refundable. ### How long is the processing time? It generally takes 10 working days t ... cation can be submitted by the business owner, landlord, consultant or a Qualified Person (QP) via GoBusiness Singapore (opens in new tab). ### How much does it cost? The processing fees for a change of use application is $500. ### Can processing fees be refunded? Processing fees are collected to account for the efforts done to process the case and are non-refundable. ### How long is the processing time? It generally takes 10 working days t",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is $500 and the processing time is 10 working days.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 3,
+          "kind": "licence",
+          "name": "SFA Food Shop Licence",
+          "authority": "Singapore Food Agency (SFA)",
+          "cost": {
+            "min": 195,
+            "max": 195,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 7,
+            "max": 7
+          },
+          "renewal": "Annually at SGD 195; renewed immediately upon payment",
+          "ongoing_filing": "Licence must be renewed before expiry annually; SFA sends reminder up to 2 months before expiry",
+          "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail",
+          "evidence": "The Food Shop Licence costs $195 and is valid for 1 year. All completed applications will be reviewed by SFA within 7 working days.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "on of application * Review of application and layout plan of food establishment * Pre-licensing inspection checks by SFA * Final approval Follow the steps below to apply for a Food Shop Licence. The Food Shop Licence costs $195 and is valid for **1** year. #### Step 1: Ensure you meet the requirements and conditions Check the Requirements for Licence / Permit for Food Retail and ensure you are able to meet all the requirements and conditions ... on of application * Review of application and layout plan of food establishment * Pre-licensing inspection checks by SFA * Final approval Follow the steps below to apply for a Food Shop Licence. The Food Shop Licence costs $195 and is valid for **1** year. #### Step 1: Ensure you meet the requirements and conditions Check the Requirements for Licence / Permit for Food Retail and ensure you are able to meet all the requirements and conditions",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is $195 and the processing time is 7 working days.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 4,
+          "kind": "inspection",
+          "name": "SFA Pre-Licensing Inspection (virtual walk-through or photo submission)",
+          "authority": "Singapore Food Agency (SFA)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 5,
+            "max": 5
+          },
+          "renewal": "Required again for any structural changes to licensed premises",
+          "ongoing_filing": "SFA conducts routine post-licence checks; no separately scheduled recurring inspection filing",
+          "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail",
+          "evidence": "Applications that require a virtual pre-licensing inspection must book a time slot at least 5 working days in advance via SFA's Pre-Licensing Inspection Portal.",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "spection by SFA Upon the completion of renovation and setup, applicants will need to request an inspection of the premises before they start operations. The pre-licensing inspection may take place either via a virtual inspection or a submission of photos. Please refer to the application acknowledgement email for details of the pre-licensing inspection regime for your application. * **Pre-licensing Inspection via virtual inspections** Applications that require a virtual pre-licensing inspection must book a time slot at least **5 working days** in advance via SFA's Pre-Licensing Inspection Portal. (Please select ‘SFA Pre-licensing Inspection Appointment’ to access the time slots available). Alternatively, you can also book a time slot via the SFA website > Digital Services > Pre-Licensing Inspection Portal. Please refer to the user guide if you need help to use the por",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is not explicitly stated as $0, but the booking requirement is 5 working days.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 5,
+          "kind": "registration",
+          "name": "Food Handler Registration & WSQ Food Safety Course (FSC) Level 1 Certification",
+          "authority": "Singapore Food Agency (SFA) / SkillsFuture Singapore (SSG)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 14,
+            "max": 14
+          },
+          "renewal": "Retraining within 5 years of initial pass; subsequent retraining every 10 years",
+          "ongoing_filing": "SSG shares training completion data with SFA within 2 weeks of course completion; licensee must register food handlers on GoBusiness before or at licence application",
+          "source_url": "https://www.sfa.gov.sg/food-handler-hygiene-officer/training-courses/wsq-food-safety-course-level-1",
+          "evidence": "To find out the cost of training and certification, contact the SSG-approved training providers listed above.",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "arded a Statement of Attainment (SOA) by SkillsFuture Singapore (SSG). #### ## Who provides the training and certification? Training and certification are provided by training providers approved by SSG. To enroll, contact a training provider listed on SSG-approved training providers for FSC Level 1. Food Handlers must be trained and certified only at SSG-approved training providers. #### ## How much does training and certification cost? To find out the cost of training and certification, contact the SSG-approved training providers listed above. #### ## Are previously attained food safety certifications recognised? * **Certifications under the F&B WSQ system** The following food safety certifications are recognised: 1. WSQ FSC Level 1 (previously known as the WSQ Follow Food & Beverage Safety and Hygiene Policies and Procedures / Basic Food Hygiene Course) * **I",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not provide cost or processing time information.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": false
+          }
+        },
+        {
+          "step": 6,
+          "kind": "licence",
+          "name": "Fire Certificate (SCDF) — for non-residential premises",
+          "authority": "Singapore Civil Defence Force (SCDF)",
+          "cost": {
+            "min": 36,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "3-year FC (for applications from 1 April 2026 onwards); fee is SGD 36 per storey for non-residential buildings",
+          "ongoing_filing": "Annual FC Form submission required in non-renewal years of 3-year cycle; annual PE inspections mandatory",
+          "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/scdf/fire-certificate",
+          "evidence": "Your building will be issued with a 3-year FC if your application (new or renewal) is for validity starting from 1 April 2026 onwards... the application fees will be $11 per storey for residential buildings and $36 per storey for non-residential buildings",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "ng from 1 April 2026 onwards. Specifically, if your current FC is valid till 31 March 2026 or later, you will be issued a 3-year FC during your upcoming renewal application. Under the current 1-year FC regime, we charge $11 per storey annually for residential buildings and $33 per storey annually for non-residential buildings. With the introduction of a 3-year FC regime, the application fees will be $11 per storey for residential buildings and $36 per storey for non-residential buildings, with certificates valid for up to three years. This revision provides annual cost savings of approximately two-thirds for compliant building owners/occupiers. Missing the FC submission deadline will result in SCDF revoking your FC with immediate effect and initiating enforcement actions against the building owner/occupier. These actions may include fines and court prosecution. Upon rectification of t",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee is $36 per storey for non-residential buildings.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 7,
+          "kind": "ongoing",
+          "name": "Pest Control Contract (minimum 12 months, monthly treatment)",
+          "authority": "Singapore Food Agency (SFA) — licensing condition",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Must be maintained continuously as a licensing condition; contract must cover at least 12 months",
+          "ongoing_filing": "Pest control contract must be submitted at licence application; ongoing contract must be maintained and available for SFA inspection",
+          "source_url": "https://www.sfa.gov.sg/docs/default-source/default-document-library/self-checklist_foodshop.pdf",
+          "evidence": "The pest control service should cover the control of rodents, cockroaches and flies for at least 12 months. The pest inspection/treatment frequency should be at least once a month.",
+          "status": "found",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "es (in scaled metric units) The layout plan should include the following: • A metric scale within the layout (with dimensions indicated) and the scale ratio used (1:X). • Clear indication of kitchen equipment and infrastructure within the layout (e.g. exhausts, sinks and wash basins). • Clear indication of boundaries of the refreshment area within the layout. Maintenance of premises f Signed Pest Control Contract The pest control service should cover the control of rodents, cockroaches and flies for at least 12 months. The pest inspection/treatment frequency should be at least once a month. g Detailed cleaning schedule Food worker / Food hygiene officer h Food Safety Course Level 1 Statement of Attainment / Food Safety Course Level 1 (Refresher) Statement of Attainment of food workers. All food workers are required to pass Food Safety Course",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not provide cost or processing time information.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 8,
+          "kind": "insurance",
+          "name": "Work Injury Compensation (WIC) Insurance",
+          "authority": "Ministry of Manpower (MOM)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Annual policy renewal; must be in place before first employee starts work",
+          "ongoing_filing": "Employer must maintain active WIC policy for all manual workers and non-manual workers earning ≤ SGD 2,600/month; policy must be with a designated insurer",
+          "source_url": "https://www.mom.gov.sg/workplace-safety-and-health/work-injury-compensation/work-injury-compensation-insurance",
+          "evidence": "All employees doing manual work, regardless of salary level. All employees doing non-manual work, earning a salary of $2,600 or less a month... From 1 January 2021, all WIC insurance policies must be issued by a designated insurer.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "l work, as well as all employees earning $2,600 or less a month. From 1 January 2021, all WIC insurance policies must be issued by a designated insurer, and must comply with MOM’s compulsory terms. Finalise all insurance contracts and provide the information required to your insurer at least 21 days before policy commencement. ## Who needs to be insured If you are an employer, you are required to buy work injury compensation insurance for: * All employees doing manual work, regardless of salary level. * All employees doing non-manual work, earning a salary of $2,600 or less a month, excluding any overtime payment, bonus payment, annual wage supplement, productivity incentive payment and any allowance. You must have insurance for both local and foreign employees. Failure to provide adequate insurance is an offence carrying a fine of up to $10,000 or jail of up to 12 months, or both.",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not provide cost or processing time information.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 9,
+          "kind": "registration",
+          "name": "CPF Submission Number (CSN) Registration",
+          "authority": "Central Provident Fund Board (CPFB)",
+          "cost": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 1
+          },
+          "renewal": null,
+          "ongoing_filing": "Monthly CPF contributions must be submitted via CPF EZPay by the 14th of each month for all eligible employees",
+          "source_url": "https://www.cpf.gov.sg/employer/making-cpf-contributions/applying-for-a-cpf-submission-number",
+          "evidence": "All employers need a CPF Submission Number (CSN) to submit their CPF contributions. If your CSN application is approved, you can proceed to submit your CPF contribution the next calendar day via CPF EZPay.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "CPF contributions Applying for a CPF Submission Number All employers need a CPF Submission Number (CSN) to submit their CPF contributions. Learn what a CSN is and how to apply for it. * Facebook Telegram WhatsApp Email LinkedIn X 1. Definition 2. Application 3. FAQs Definition Application FAQs Definition What’s a CSN? Your CSN is a unique identifier The CSN is used by employers to transact with the CPF Board. This includes making CPF payments and making requests relating to em",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text implies no fee and immediate processing by the next calendar day.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 10,
+          "kind": "ongoing",
+          "name": "Environmental Sanitation (ES) Programme Submission to NEA (selected food shops)",
+          "authority": "National Environment Agency (NEA)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": null,
+            "max": null
+          },
+          "renewal": "Submit Environmental Sanitation Programme (ESP) within 1 month of licence grant; ongoing compliance required",
+          "ongoing_filing": "ESP must be submitted to NEA within 1 month; mandatory ES regime ongoing for selected food shops (coffee shops, eating houses, canteens, food courts, private markets)",
+          "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/sfa/food-shop-licence",
+          "evidence": "Selected retail foodshops are required to implement the mandatory ES regime and submit the Environmental Sanitation Programme (ESP) within 1 month to NEA.",
+          "status": "unclear",
+          "verification": "verified",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "tre for help. For a list of ServiceSG Centres, please visit https://www.psd.gov.sg/servicesg/ For the operation of a food shop where there is retail sale of food and/or beverage. You will need to apply for a Food Shop Licence if you intend to operate a retail food outlet where food and/or drink are sold wholly by retail. The purpose of licensing is to ensure cleanliness and food safety in food retail outlets and to prevent food-borne diseases. Selected retail foodshops are required to implement the mandatory ES regime and submit the Environmental Sanitation Programme (ESP) within 1 month to NEA. You may refer below on the steps for application of Food Shop Licence. Overview of Licence Application: Step 1: Obtain In-Principle Approval Step 2: Commence Renovation & Set-up Step 3: Request for Inspection Virtual Inspections Submission of Photos for Inspection Step 4: Complete Payme",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not provide cost or processing time information.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        },
+        {
+          "step": 11,
+          "kind": "tax",
+          "name": "GST Registration (compulsory when taxable turnover exceeds SGD 1 million)",
+          "authority": "Inland Revenue Authority of Singapore (IRAS)",
+          "cost": {
+            "min": null,
+            "max": null,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 10,
+            "max": 30
+          },
+          "renewal": null,
+          "ongoing_filing": "Quarterly GST return (Form GST F5) due within 1 month after end of each accounting period; GST payable to IRAS within same deadline",
+          "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/goods-and-services-tax-(gst)-what-it-is-and-how-it-works",
+          "evidence": "You must submit your GST return within one month from the end of each prescribed accounting period (usually quarterly); The current GST rate is 9%.",
+          "status": "unclear",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not provide cost or processing time information for registration.",
+            "cost_ok": false,
+            "currency_ok": true,
+            "time_ok": false
+          },
+          "cost_unsupported": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          }
+        },
+        {
+          "step": 12,
+          "kind": "ongoing",
+          "name": "ACRA Business Registration Renewal (Sole Proprietorship)",
+          "authority": "Accounting and Corporate Regulatory Authority (ACRA)",
+          "cost": {
+            "min": 30,
+            "max": 90,
+            "currency": "SGD"
+          },
+          "time_days": {
+            "min": 1,
+            "max": 1
+          },
+          "renewal": "1-year renewal at SGD 30 or 3-year renewal at SGD 90; immediate approval",
+          "ongoing_filing": "Must renew before expiry; MediSave contributions must be current; ACRA sends reminder 60 days before expiry",
+          "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/key-requirements-common-offences/renewing-your-registration/",
+          "evidence": "Fee (non-refundable) * One-year renewal: $30 * Three-year renewal: $90. Approval time | Immediate.",
+          "status": "found",
+          "verification": "verified_fuzzy",
+          "official_domain": true,
+          "checked_at": "2026-11-09",
+          "excerpt": "pens in new tab) Last updated on 20 July 2026 ## Renewal reminders ACRA will send a renewal reminder letter to your residential address **60 days** before your business registration expires. If you have not renewed within 30 days of the expiry date, you will also receive an SMS reminder. If you did not receive a reminder: * Check your physical mailbox and your Bizfile inbox. * Log in to Bizfile to ensure your residential address and mobile n ... t the CPF Board via Write to us (opens in new tab). | Fees and processing time Renewal fees | What you need to know | Details | | --- | --- | | Fee (non-refundable) | * **One-year renewal:** $30 * **Three-year renewal:** $90 | | Payment methods | * Credit or debit card * PayNow * PayPal * Apple Pay * Google Pay | | Approval time | Immediate | What to do based on your entity status Use this table to determine whether to renew or restore your",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fees are $30 for one year and $90 for three years, with immediate approval.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
+        }
+      ],
+      "gaps": [
+        "WSQ Food Safety Course (FSC) Level 1 fee: official page directs prospective trainees to contact SSG-approved training providers; no fee stated on SFA or SSG official pages.",
+        "Fire Certificate (SCDF) total fee for a café: fee is SGD 36 per storey for non-residential buildings, but the number of storeys occupied by a typical small café is not fixed; total cost cannot be confirmed without premises-specific data.",
+        "Fire Certificate (SCDF) processing time in days: the GoBusiness SCDF page does not state an official processing time for FC applications.",
+        "CPF Submission Number (CSN) processing time: source [22] and [23] address this topic but the evidence brief did not capture the specific number of days from either page; official processing time in days could not be confirmed.",
+        "WIC insurance premium cost: MOM mandates the insurance but does not publish a fixed premium; cost varies by insurer, number of employees, and their occupations.",
+        "Pest control contract cost: SFA mandates the contract as a licensing condition but does not publish fees; cost varies by provider and premises size.",
+        "Environmental Sanitation Programme applicability to a small café: NEA's mandatory ES regime applies to 'selected' food shops; official criteria for which café types are captured have not been confirmed from the evidence.",
+        "URA Change of Use approval applicability: whether a specific café premises already holds F&B use approval determines if this step is required; depends on individual premises history and cannot be confirmed generically.",
+        "Land Betterment Charge (LBC) payable to SLA upon URA Change of Use: amount is site-specific and cannot be confirmed from official pages.",
+        "GST registration trigger for a small café: a new café is unlikely to exceed SGD 1 million turnover immediately; voluntary registration is optional below the threshold. Compulsory registration timing depends on actual turnover, which is business-specific.",
+        "Food Hygiene Officer (WSQ FSC Level 3) requirement for a small café: mandatory only for caterers, canteens, food courts, and restaurants in 2+ adjacent units or with kitchen area exceeding 16 sq metres; applicability to a standard small café depends on kitchen size and operating model.",
+        "ACRA business name reservation fee of SGD 15 is separate from the SGD 100 registration fee; total setup cost for ACRA step is SGD 115 assuming one name reservation, but this is confirmed from the fee schedule page."
+      ],
+      "summary": {
+        "cost_min": 731,
+        "cost_max": 731,
+        "currency": "SGD",
+        "cost_items_unknown": 4,
+        "time_min_days": 48,
+        "time_max_days": 177,
+        "time_items_unknown": 2,
+        "time_longest_step_days": 60,
+        "steps": 9,
+        "usd_min": 570,
+        "usd_max": 570,
+        "items_unknown": {
+          "cost": 4,
+          "time": 2
+        },
+        "verified": 6,
+        "gemini": {
+          "checked": 12,
+          "supported": 6,
+          "partly": 0,
+          "unsupported": 6,
+          "currency_unsure": 0,
+          "corrected": 0
+        },
+        "gaps": 12,
+        "confidence": 0.25,
+        "renewals": [
+          {
+            "name": "Business Registration with ACRA (Sole Proprietorship / Company)",
+            "renewal": "Annually at SGD 30 (1-year) or SGD 90 (3-year); immediate approval via Bizfile",
+            "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/service-transaction-fees/"
+          },
+          {
+            "name": "URA Change of Use Approval (if premises not already approved for F&B use)",
+            "renewal": "Planning permission typically valid 3 years or longer; no ongoing renewal fee stated",
+            "source_url": "https://www.ura.gov.sg/guidelines/property-and-business-owners/business-owners/change-use-of-property-for-business/"
+          },
+          {
+            "name": "SFA Food Shop Licence",
+            "renewal": "Annually at SGD 195; renewed immediately upon payment",
+            "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail"
+          },
+          {
+            "name": "SFA Pre-Licensing Inspection (virtual walk-through or photo submission)",
+            "renewal": "Required again for any structural changes to licensed premises",
+            "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail"
+          },
+          {
+            "name": "Food Handler Registration & WSQ Food Safety Course (FSC) Level 1 Certification",
+            "renewal": "Retraining within 5 years of initial pass; subsequent retraining every 10 years",
+            "source_url": "https://www.sfa.gov.sg/food-handler-hygiene-officer/training-courses/wsq-food-safety-course-level-1"
+          },
+          {
+            "name": "Fire Certificate (SCDF) — for non-residential premises",
+            "renewal": "3-year FC (for applications from 1 April 2026 onwards); fee is SGD 36 per storey for non-residential buildings",
+            "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/scdf/fire-certificate"
+          },
+          {
+            "name": "Pest Control Contract (minimum 12 months, monthly treatment)",
+            "renewal": "Must be maintained continuously as a licensing condition; contract must cover at least 12 months",
+            "source_url": "https://www.sfa.gov.sg/docs/default-source/default-document-library/self-checklist_foodshop.pdf"
+          },
+          {
+            "name": "Work Injury Compensation (WIC) Insurance",
+            "renewal": "Annual policy renewal; must be in place before first employee starts work",
+            "source_url": "https://www.mom.gov.sg/workplace-safety-and-health/work-injury-compensation/work-injury-compensation-insurance"
+          },
+          {
+            "name": "Environmental Sanitation (ES) Programme Submission to NEA (selected food shops)",
+            "renewal": "Submit Environmental Sanitation Programme (ESP) within 1 month of licence grant; ongoing compliance required",
+            "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/sfa/food-shop-licence"
+          },
+          {
+            "name": "ACRA Business Registration Renewal (Sole Proprietorship)",
+            "renewal": "1-year renewal at SGD 30 or 3-year renewal at SGD 90; immediate approval",
+            "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/key-requirements-common-offences/renewing-your-registration/"
+          }
+        ],
+        "ongoing_filings": [
+          {
+            "name": "Business Registration with ACRA (Sole Proprietorship / Company)",
+            "filing": "Renewal before expiry each year (or every 3 years); no separate annual return for sole proprietorships",
+            "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/service-transaction-fees/"
+          },
+          {
+            "name": "SFA Food Shop Licence",
+            "filing": "Licence must be renewed before expiry annually; SFA sends reminder up to 2 months before expiry",
+            "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail"
+          },
+          {
+            "name": "SFA Pre-Licensing Inspection (virtual walk-through or photo submission)",
+            "filing": "SFA conducts routine post-licence checks; no separately scheduled recurring inspection filing",
+            "source_url": "https://www.sfa.gov.sg/food-retail/licence-permit/application-process-fees-for-licence-permit-for-food-retail"
+          },
+          {
+            "name": "Food Handler Registration & WSQ Food Safety Course (FSC) Level 1 Certification",
+            "filing": "SSG shares training completion data with SFA within 2 weeks of course completion; licensee must register food handlers on GoBusiness before or at licence application",
+            "source_url": "https://www.sfa.gov.sg/food-handler-hygiene-officer/training-courses/wsq-food-safety-course-level-1"
+          },
+          {
+            "name": "Fire Certificate (SCDF) — for non-residential premises",
+            "filing": "Annual FC Form submission required in non-renewal years of 3-year cycle; annual PE inspections mandatory",
+            "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/scdf/fire-certificate"
+          },
+          {
+            "name": "Pest Control Contract (minimum 12 months, monthly treatment)",
+            "filing": "Pest control contract must be submitted at licence application; ongoing contract must be maintained and available for SFA inspection",
+            "source_url": "https://www.sfa.gov.sg/docs/default-source/default-document-library/self-checklist_foodshop.pdf"
+          },
+          {
+            "name": "Work Injury Compensation (WIC) Insurance",
+            "filing": "Employer must maintain active WIC policy for all manual workers and non-manual workers earning ≤ SGD 2,600/month; policy must be with a designated insurer",
+            "source_url": "https://www.mom.gov.sg/workplace-safety-and-health/work-injury-compensation/work-injury-compensation-insurance"
+          },
+          {
+            "name": "CPF Submission Number (CSN) Registration",
+            "filing": "Monthly CPF contributions must be submitted via CPF EZPay by the 14th of each month for all eligible employees",
+            "source_url": "https://www.cpf.gov.sg/employer/making-cpf-contributions/applying-for-a-cpf-submission-number"
+          },
+          {
+            "name": "Environmental Sanitation (ES) Programme Submission to NEA (selected food shops)",
+            "filing": "ESP must be submitted to NEA within 1 month; mandatory ES regime ongoing for selected food shops (coffee shops, eating houses, canteens, food courts, private markets)",
+            "source_url": "https://licensing.gobusiness.gov.sg/licence-directory/sfa/food-shop-licence"
+          },
+          {
+            "name": "GST Registration (compulsory when taxable turnover exceeds SGD 1 million)",
+            "filing": "Quarterly GST return (Form GST F5) due within 1 month after end of each accounting period; GST payable to IRAS within same deadline",
+            "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/goods-and-services-tax-(gst)-what-it-is-and-how-it-works"
+          },
+          {
+            "name": "ACRA Business Registration Renewal (Sole Proprietorship)",
+            "filing": "Must renew before expiry; MediSave contributions must be current; ACRA sends reminder 60 days before expiry",
+            "source_url": "https://www.acra.gov.sg/manage/sole-proprietorship-partnerships/key-requirements-common-offences/renewing-your-registration/"
+          }
+        ]
+      }
+    }
+  ],
+  "recommendation": {
+    "ranking": [
+      {
+        "place": "Singapore",
+        "level": "full",
+        "score": 0.786,
+        "missing": [
+          "time"
+        ]
+      },
+      {
+        "place": "Dubai, UAE",
+        "level": "full",
+        "score": 0.683,
+        "missing": [
+          "cost",
+          "time"
+        ]
+      },
+      {
+        "place": "London, United Kingdom",
+        "level": "full",
+        "score": 0.121,
+        "missing": [
+          "time"
+        ]
+      }
+    ],
+    "weights": {
+      "cost": 0.35,
+      "time": 0.3,
+      "steps": 0.15,
+      "confidence": 0.2
+    },
+    "headline": "Singapore",
+    "provisional": true,
+    "points": [
+      {
+        "tone": "warn",
+        "text": "Time was NOT scored: fewer than two places have official processing times stated for at least half their steps. Totals below are partial (\"at least\")."
+      },
+      {
+        "tone": "warn",
+        "text": "Trade-off: Dubai, UAE is better sourced (44% verified vs 25%)."
+      },
+      {
+        "tone": "warn",
+        "text": "Singapore has 12 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "Dubai, UAE: cost not scored (too little stated on official pages); not rewarded for that gap."
+      },
+      {
+        "tone": "warn",
+        "text": "Dubai, UAE has 15 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "London, United Kingdom has 14 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "Costs/times are what official pages state; real timelines vary. Hand this to a lawyer to confirm."
+      }
+    ],
+    "text": [
+      "Provisional - Easiest place to start on the evidence gathered: Singapore (score 0.786); note time could not be scored for it.",
+      "Time was NOT scored: fewer than two places have official processing times stated for at least half their steps. Totals below are partial (\"at least\").",
+      "Trade-off: Dubai, UAE is better sourced (44% verified vs 25%).",
+      "Singapore has 12 flagged gap(s) - confirm with a local lawyer.",
+      "Dubai, UAE: cost not scored (too little stated on official pages); not rewarded for that gap.",
+      "Dubai, UAE has 15 flagged gap(s) - confirm with a local lawyer.",
+      "London, United Kingdom has 14 flagged gap(s) - confirm with a local lawyer.",
+      "Costs/times are what official pages state; real timelines vary. Hand this to a lawyer to confirm."
+    ]
+  },
+  "fx": {
+    "ok": true,
+    "asof": "2026-11-09",
+    "rows": [
+      {
+        "currency": "AED",
+        "per_usd": 3.6725,
+        "sources": [
+          {
+            "name": "open.er-api.com",
+            "per_usd": 3.6725
+          },
+          {
+            "name": "currency-api (jsDelivr)",
+            "per_usd": 3.6725
+          }
+        ],
+        "max_dev_pct": 0,
+        "status": "ok"
+      },
+      {
+        "currency": "GBP",
+        "per_usd": 0.748366,
+        "sources": [
+          {
+            "name": "open.er-api.com",
+            "per_usd": 0.748366
+          },
+          {
+            "name": "currency-api (jsDelivr)",
+            "per_usd": 0.74740543
+          },
+          {
+            "name": "ECB via Frankfurter",
+            "per_usd": 0.74711
+          }
+        ],
+        "max_dev_pct": 0.17,
+        "status": "ok"
+      },
+      {
+        "currency": "SGD",
+        "per_usd": 1.282886,
+        "sources": [
+          {
+            "name": "open.er-api.com",
+            "per_usd": 1.282886
+          },
+          {
+            "name": "currency-api (jsDelivr)",
+            "per_usd": 1.281014
+          },
+          {
+            "name": "ECB via Frankfurter",
+            "per_usd": 1.2816
+          }
+        ],
+        "max_dev_pct": 0.15,
+        "status": "ok"
+      }
+    ]
+  },
+  "generated_at": "2026-11-09T12:07:44Z"
+}
