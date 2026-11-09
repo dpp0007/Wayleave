@@ -1,6 +1,7 @@
 import type { GeminiItem } from "./gemini";
 import { fetchPages } from "./tf";
 import { KINDS } from "./types";
+import { safeUrl } from "./validate";
 
 export type Level = "full" | "partial" | "quick" | "failed";
 const OFFICIAL = new Set(["gov", "gob", "gouv", "govt", "government", "go", "gc", "admin", "europa", "gv", "overheid", "bund", "nyc", "mil", "state"]);
@@ -116,10 +117,18 @@ export const agentGoal = (activity: string, place: string) =>
   `Read ONLY this one official page about starting "${activity}" in ${place}; do not click through to other pages. Be fast. Extract at most 6 of the most important requirements with the fees, processing times, renewals and recurring filings that THIS page states. Keep gaps to 3 short entries. ` +
   `Reply with JSON only, this shape (source_url = this page's URL):\n${SHAPE}\n${RULES}`;
 
+const str = (v: unknown, max: number) => (typeof v === "string" ? v.slice(0, max) : undefined);
+const num = (v: unknown) => (typeof v === "number" && Number.isFinite(v) && v >= 0 && v < 1e12 ? v : null);
+
+/** Model output is untrusted: fields are bounded, numbers must be finite, and only http(s) links survive. */
 export function normalizeItems(items: any[], defaultUrl?: string) {
-  return (Array.isArray(items) ? items : []).filter((i) => i && typeof i === "object").map((i, n) => ({
-    ...i, step: i.step ?? n + 1, name: i.name || "(unnamed)", source_url: i.source_url || defaultUrl,
-    kind: (KINDS as readonly string[]).includes(i.kind) ? i.kind : "licence", cost: i.cost || {}, time_days: i.time_days || {},
+  return (Array.isArray(items) ? items : []).slice(0, 20).filter((i) => i && typeof i === "object").map((i, n) => ({
+    step: Number.isFinite(i.step) ? i.step : n + 1, name: str(i.name, 200) || "(unnamed)", authority: str(i.authority, 200),
+    kind: (KINDS as readonly string[]).includes(i.kind) ? i.kind : "licence",
+    cost: { min: num(i.cost?.min), max: num(i.cost?.max), currency: /^[A-Za-z]{3}$/.test(String(i.cost?.currency ?? "")) ? String(i.cost.currency).toUpperCase() : undefined },
+    time_days: { min: num(i.time_days?.min), max: num(i.time_days?.max) },
+    renewal: str(i.renewal, 400), ongoing_filing: str(i.ongoing_filing, 400), evidence: str(i.evidence, 400),
+    status: i.status === "unclear" ? "unclear" : "found", source_url: safeUrl(i.source_url || defaultUrl),
   }));
 }
 

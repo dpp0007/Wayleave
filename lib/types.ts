@@ -7,6 +7,7 @@ export type PlaceState = {
   stage: number;                 // 0 finding pages, 1 quick read, 2 deep research (while pending)
   done: boolean; previewSent: boolean;
   report?: any; activity?: Activity | null;
+  fill?: "pending" | "done" | "skipped"; fillStats?: { tried: number; filled: number };
   gemini?: "pending" | "done" | "unavailable"; geminiModel?: string; geminiNote?: string;
 };
 

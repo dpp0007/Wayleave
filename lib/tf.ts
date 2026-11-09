@@ -6,7 +6,7 @@ export class TFError extends Error {
 export function explain(e: unknown): string {
   const code = e instanceof TFError ? e.code : "";
   return ({
-    INVALID_API_KEY: "TinyFish rejected the API key. Check TINYFISH_API_KEY in .env.local and restart the server",
+    INVALID_API_KEY: process.env.NODE_ENV === "production" ? "the research service is temporarily unavailable" : "TinyFish rejected the API key. Check TINYFISH_API_KEY in .env.local and restart the server",
     INSUFFICIENT_CREDITS: "the TinyFish free allowance is used up and the wallet is empty. Add funds or wait for the daily reset",
     FORBIDDEN: "this TinyFish account does not have Research enabled",
     RATE_LIMIT_EXCEEDED: "TinyFish rate limit or the 5-run concurrency cap was reached. Try again in a minute",
@@ -40,12 +40,12 @@ export async function call(method: string, url: string, body?: unknown, retries 
   }
 }
 
-export const search = async (query: string) =>
-  (await call("GET", "https://api.search.tinyfish.ai?" + new URLSearchParams({ query }))).results ?? [];
+export const search = async (query: string, includeDomains: string[] = []) =>
+  (await call("GET", "https://api.search.tinyfish.ai?" + new URLSearchParams({ query, ...(includeDomains.length ? { include_domains: includeDomains.join(",") } : {}) }))).results ?? [];
 
-export const fetchPages = (urls: string[]) =>
+export const fetchPages = (urls: string[], perUrlMs = 20000) =>
   call("POST", "https://api.fetch.tinyfish.ai", {
-    urls: urls.slice(0, 10), format: "markdown", ttl: 0, per_url_timeout_ms: 20000,
+    urls: urls.slice(0, 10), format: "markdown", ttl: 0, per_url_timeout_ms: perUrlMs,
     purpose: "Verify a quoted government requirement appears on the cited official page",
   }, 1, 55000);
 

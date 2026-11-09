@@ -11,6 +11,7 @@ export default function Checks({ data, states }: { data: Data; states: PlaceStat
     unsupported: a.unsupported + p.summary.gemini.unsupported, corrected: a.corrected + p.summary.gemini.corrected, currency: a.currency + p.summary.gemini.currency_unsure }),
     { checked: 0, supported: 0, partly: 0, unsupported: 0, corrected: 0, currency: 0 });
   const pending = states.some((s) => s.gemini === "pending");
+  const tried = states.reduce((n, s) => n + (s.fillStats?.tried ?? 0), 0), found = items.filter((i) => i.filled).length;
   const model = states.find((s) => s.geminiModel)?.geminiModel;
   const reason = states.find((s) => s.gemini === "unavailable")?.geminiNote;
 
@@ -22,6 +23,7 @@ export default function Checks({ data, states }: { data: Data; states: PlaceStat
           <h3 className="text-base">Sources, re-read live</h3>
           <p className="mt-1 text-2xl font-semibold tabular-nums">{live}<span className="text-base font-normal text-mut"> of {items.length} items</span></p>
           <p className="mt-1 text-sm text-mut">The cited official page was opened again and the quoted text found on it.{badQuote > 0 && ` ${badQuote} quote${badQuote > 1 ? "s" : ""} not found.`}{unread > 0 && ` ${unread} page${unread > 1 ? "s" : ""} unreadable.`}</p>
+          {tried > 0 && <p className="mt-2 text-sm text-mut"><b className="font-semibold text-ink">Gap filling:</b> a second official page was searched for {tried} unpriced step{tried > 1 ? "s" : ""}; {found} fee or time found and verified. The rest stay marked as gaps.</p>}
         </div>
 
         <div>

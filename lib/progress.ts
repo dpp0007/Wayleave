@@ -1,12 +1,13 @@
 import type { PlaceState } from "./types";
 
 // What a place is doing, in the order a user sees it. "Find sources" and "First look" are quick; deep research is the long wait.
-export const STEPS = ["Find sources", "First look", "Deep research", "Verify live", "Gemini check"] as const;
+export const STEPS = ["Find sources", "First look", "Deep research", "Verify live", "Fill gaps", "Gemini check"] as const;
 
 /** Index into STEPS that is currently active for a place (STEPS.length means everything is finished). */
 export function stepOf(p: PlaceState): number {
   if (!p.done) return Math.min(p.stage, 2);
-  if (p.gemini === "pending") return 4;
+  if (p.fill === "pending") return 4;
+  if (p.gemini === "pending") return 5;
   return STEPS.length;
 }
 
@@ -15,7 +16,7 @@ export function stepOf(p: PlaceState): number {
  * toward ~85%) with how much it has read, so the bar keeps moving and never reaches 100% until the work is really done.
  */
 export function placeProgress(p: PlaceState, now: number): number {
-  if (p.done) return p.gemini === "pending" ? 0.94 : 1;
+  if (p.done) return p.fill === "pending" ? 0.92 : p.gemini === "pending" ? 0.96 : 1;
   const secs = Math.max(0, (now - p.startedAt) / 1000);
   if (p.stage <= 0) return Math.min(0.08, 0.02 + secs / 600);
   const read = p.activity ? Math.min(1, p.activity.sourceCount / 30) : 0;

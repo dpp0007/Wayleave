@@ -25,7 +25,8 @@ function useRotate(n: number, ms: number) {
 function statusLabel(p: PlaceState) {
   const s = stepOf(p);
   if (s >= STEPS.length) return p.report?.level === "failed" ? "Not assessed" : "Done";
-  if (s === 4) return "Gemini is double-checking figures";
+  if (s === 5) return "Gemini is double-checking figures";
+  if (s === 4) return "Looking for missing fees on official pages";
   if (s === 2) return p.activity?.sourceCount ? "Reading official sources" : "Deep research starting";
   return s === 1 ? "First look at one official page" : "Finding official pages";
 }
@@ -88,7 +89,7 @@ function PlaceRoom({ p, now }: { p: PlaceState; now: number }) {
       {p.done && p.report?.items?.length > 0 && (
         <p className="mt-4 rounded-lg bg-sunk px-3 py-2 text-sm text-mut">
           <b className="font-semibold text-ink">{p.report.items.length} requirements found.</b>{" "}
-          {finished ? "Fees, currencies and sources are checked." : "Every cited page was re-read live; Gemini is now checking fees and currencies."}
+          {finished ? "Fees, currencies and sources are checked." : p.fill === "pending" ? "Every cited page was re-read live; now looking for fees the first pages did not state." : "Every cited page was re-read live; Gemini is now checking fees and currencies."}
         </p>
       )}
 

@@ -1,8 +1,10 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import About from "@/components/About";
 import Hero, { TABS } from "@/components/Hero";
 import Nav from "@/components/Nav";
+import Unlock from "@/components/Unlock";
 import RunRoom from "@/components/RunRoom";
 import Checks from "@/components/results/Checks";
 import CostBreakdown from "@/components/results/CostBreakdown";
@@ -42,6 +44,9 @@ export default function Page() {
   // results so far: only places whose research is final (first-look previews are already shown in the research room)
   const doneNames = new Set(job?.places.filter((p) => p.done && p.report?.level !== "failed").map((p) => p.place));
   const partial = data && doneNames.size ? { ...data, places: data.places.filter((p) => doneNames.has(p.place)), recommendation: { ...data.recommendation, ranking: [] } } : null;
+  // progress of the finishing passes (gap filling, then Gemini) over the places that have something to check
+  const checkable = job?.places.filter((p) => p.report?.items?.length && p.report.level !== "failed") ?? [];
+  const fillDone = checkable.filter((p) => p.fill && p.fill !== "pending").length, gemDone = checkable.filter((p) => p.gemini && p.gemini !== "pending").length;
   const degraded = job?.places.filter((p) => p.done && p.report && p.report.level !== "full" && p.notes.length) ?? [];
 
   const results = job && (
@@ -67,7 +72,7 @@ export default function Page() {
       {data && finished && !allFailed && (
         <div className="space-y-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <p className="flex items-center gap-2 text-sm text-mut">{c.checkingFigures ? <><Spinner className="text-accent" /> Gemini is double-checking the figures…</> : `Compared ${job.places.length} places from official sources.`}</p>
+            <p className="flex items-center gap-2 text-sm text-mut">{c.checkingFigures ? <><Spinner className="text-accent" /> Finishing checks: missing fees {fillDone}/{checkable.length} places · Gemini double-check {gemDone}/{checkable.length}</> : `Compared ${job.places.length} places from official sources.`}</p>
             <ExportBar data={data} activity={job.activity} />
           </div>
           <Verdict r={data.recommendation} />
@@ -110,6 +115,8 @@ export default function Page() {
     <Nav onCompare={focusHero} onSample={() => samples[0] && openSaved(samples[0].file)} hasSample={samples.length > 0} hasResults={!!job} />
     <Hero activity={activity} setActivity={setActivity} places={places} setPlaces={setPlaces} onSubmit={submit} busy={c.busy} running={c.researching} error={c.error} />
 
+    {c.needsCode && <div className="px-4 pt-6 print:hidden"><Unlock onUnlock={c.unlock} /></div>}
+
     {/* first visit: the explanation comes straight after the hero. With a comparison open: results first, explanation last. */}
     <main className="mx-auto max-w-[1240px] space-y-16 px-4 pb-16">
       {job ? <>{results}{saved}<About /></> : <><div className="pt-2"><About /></div>{saved}</>}
@@ -118,7 +125,12 @@ export default function Page() {
     <footer className="border-t border-line print:hidden">
       <div className="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-3 px-4 py-6 text-xs text-mut">
         <p>Built with TinyFish Research, Search, Fetch and Agent, and Gemini. Informational only, not legal advice.</p>
-        <p>Hero remixed from “Hero Intro Animation” by Yahia Bakour (lookap).</p>
+        <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-4 gap-y-1">
+          <Link href="/privacy" className="hover:text-ink hover:underline">Privacy</Link>
+          <Link href="/terms" className="hover:text-ink hover:underline">Terms</Link>
+          <a href="https://github.com/dpp0007/Wayleave" target="_blank" rel="noopener noreferrer" className="hover:text-ink hover:underline">GitHub</a>
+          <span className="text-faint">Hero remixed from “Hero Intro Animation” by Yahia Bakour (lookap)</span>
+        </nav>
       </div>
     </footer>
   </>;

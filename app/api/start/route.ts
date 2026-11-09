@@ -1,6 +1,8 @@
-import { NextResponse } from "next/server";
+import { api } from "@/lib/api";
+import { chargeRuns, fail } from "@/lib/guard";
 import { agentGoal, isOfficial, researchQuery } from "@/lib/logic";
 import { TFError, agentStart, explain, researchStart, search } from "@/lib/tf";
+import { parseStart } from "@/lib/validate";
 
 export const maxDuration = 60;
 const prefer = (u: string) => (/licen|permit|regist|start|business|apply/i.test(u) ? 0 : 1);
@@ -29,16 +31,15 @@ async function startPlace(activity: string, place: string) {
   };
 }
 
-export async function POST(req: Request) {
-  const { activity, places } = await req.json().catch(() => ({}));
-  const list: string[] = Array.isArray(places) ? [...new Set<string>(places.map((p: string) => String(p).trim()).filter(Boolean))] : [];
-  if (!activity?.trim() || list.length < 3) return NextResponse.json({ error: "Need an activity and at least 3 places." }, { status: 400 });
-  if (list.length > 5) return NextResponse.json({ error: "At most 5 places (TinyFish allows 5 concurrent research runs)." }, { status: 400 });
-  if (!process.env.TINYFISH_API_KEY) return NextResponse.json({ error: "TINYFISH_API_KEY is not set on the server." }, { status: 500 });
-  const started = await Promise.all(list.map((p) => startPlace(activity.trim(), p)));
+export const POST = api("start", async (body) => {
+  const v = parseStart(body);
+  if ("error" in v) return fail(400, v.error);
+  if (!process.env.TINYFISH_API_KEY) return fail(503, "The research service is not configured yet.");
+  if (!chargeRuns(v.places.length)) return fail(429, "Today's research budget is used up. Please try again tomorrow.");
+  const started = await Promise.all(v.places.map((p) => startPlace(v.activity, p)));
   // Nothing could be started anywhere for an account-level reason: say so now instead of starting a job that can only fail.
   const code = started[0].fatal;
   if (code && started.every((p) => p.fatal === code) && ["INVALID_API_KEY", "INSUFFICIENT_CREDITS"].includes(code))
-    return NextResponse.json({ error: `Could not start: ${explain(new TFError(0, code, ""))}.` }, { status: code === "INVALID_API_KEY" ? 401 : 402 });
-  return NextResponse.json({ places: started.map(({ fatal, ...p }) => p) });
-}
+    return fail(code === "INVALID_API_KEY" ? 503 : 402, `Could not start: ${explain(new TFError(0, code, ""))}.`);
+  return { places: started.map(({ fatal, ...p }) => p) };
+}, { maxBytes: 4_000 });

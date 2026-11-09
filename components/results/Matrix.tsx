@@ -2,6 +2,7 @@
 import { useState, type ReactNode } from "react";
 import { KINDS, KIND_LABEL, LEVEL, type Data } from "@/lib/types";
 import { Badge, SectionTitle, cx } from "../ui";
+import { safeUrl } from "@/lib/validate";
 import { usd } from "./PlaceCards";
 
 const num = (n: any) => (typeof n === "number" ? n.toLocaleString("en-US", { maximumFractionDigits: 2 }) : n);
@@ -40,6 +41,7 @@ function Item({ i, open }: { i: any; open: boolean }) {
           {time && <Badge>{time} d</Badge>}
           {issues.length === 0 ? <Badge tone="ok" title="Page re-read live and Gemini agrees">✓ Checked</Badge>
             : <Badge tone={severe ? "bad" : "warn"} title={issues.map((x) => x.text).join("; ")}>⚑ {issues.length} to check</Badge>}
+          {i.filled && <Badge tone="accent" title="The fee or time was missing on the first page and was found, and verified, on a second official page">Gap filled</Badge>}
           <span className="ml-auto text-[11px] text-faint group-open:hidden">Read more</span>
         </div>
       </summary>
@@ -48,10 +50,11 @@ function Item({ i, open }: { i: any; open: boolean }) {
         {issues.length > 0 && <ul className="space-y-0.5 text-warn">{issues.map((x, n) => <li key={n}>⚑ {x.text}</li>)}</ul>}
         {i.gemini?.note && i.gemini.verdict !== "supported" && <div>Gemini: {i.gemini.note}</div>}
         {i.cost_corrected && <div className="text-accent">Fee corrected from {i.cost_unsupported?.min ?? i.cost_unsupported?.max} after checking the page.</div>}
+        {i.filled && <div className="text-accent">Found on a second official page ({i.filled.fields.join(" and ")}): {safeUrl(i.filled.url) && <a href={safeUrl(i.filled.url)} target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">source ↗</a>}<blockquote className="mt-1 rounded-r-lg border-l-2 border-accent bg-bg px-2.5 py-1.5 text-mut">“{i.filled.quote}”</blockquote></div>}
         {i.renewal && <div>↻ {i.renewal}</div>}
         {i.ongoing_filing && <div>▤ {i.ongoing_filing}</div>}
         {i.evidence && <blockquote className="rounded-r-lg border-l-2 border-line2 bg-bg px-2.5 py-1.5">“{i.evidence}”</blockquote>}
-        <div>{i.source_url && <a href={i.source_url} target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline">Official source ↗</a>} <span className="text-faint">checked {i.checked_at}</span></div>
+        <div>{i.source_url && <a href={safeUrl(i.source_url)} target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline">Official source ↗</a>} <span className="text-faint">checked {i.checked_at}</span></div>
       </div>
     </details>
   );
@@ -148,9 +151,9 @@ export default function Matrix({ data }: { data: Data }) {
             {kinds.length === 0 && <tr><td colSpan={P.length + 1} className="p-6 text-center text-mut">Nothing matches this filter.</td></tr>}
 
             <tr><th scope="row" className={rowHead}>Renewals</th>{P.map((p) => <td key={p.place} className={td}><Lines empty={<Badge tone="warn">None stated</Badge>}
-              items={p.summary.renewals.map((x: any) => <><b className="font-medium">{x.name}</b><br /><span className="text-mut">↻ {x.renewal} <a href={x.source_url} target="_blank" rel="noopener noreferrer" className="text-accent">↗</a></span></>)} /></td>)}</tr>
+              items={p.summary.renewals.map((x: any) => <><b className="font-medium">{x.name}</b><br /><span className="text-mut">↻ {x.renewal} <a href={safeUrl(x.source_url)} target="_blank" rel="noopener noreferrer" className="text-accent">↗</a></span></>)} /></td>)}</tr>
             <tr><th scope="row" className={rowHead}>Recurring filings</th>{P.map((p) => <td key={p.place} className={td}><Lines empty={<Badge tone="warn">None stated</Badge>}
-              items={p.summary.ongoing_filings.map((x: any) => <><b className="font-medium">{x.name}</b><br /><span className="text-mut">▤ {x.filing} <a href={x.source_url} target="_blank" rel="noopener noreferrer" className="text-accent">↗</a></span></>)} /></td>)}</tr>
+              items={p.summary.ongoing_filings.map((x: any) => <><b className="font-medium">{x.name}</b><br /><span className="text-mut">▤ {x.filing} <a href={safeUrl(x.source_url)} target="_blank" rel="noopener noreferrer" className="text-accent">↗</a></span></>)} /></td>)}</tr>
             <tr><th scope="row" className={rowHead}>Gaps &amp; unclear</th>{P.map((p) => <td key={p.place} className={td}><Lines empty={<span className="text-faint">None reported</span>}
               items={p.gaps.map((g: string) => <span className="text-warn">• {g}</span>)} /></td>)}</tr>
             <tr><th scope="row" className={cx(rowHead, "border-b-0")}>Research run</th>{P.map((p) => <td key={p.place} className={cx(td, "border-b-0 text-xs text-faint")}>{p.research_run_id ?? "—"}<br />{p.termination_reason ?? ""}</td>)}</tr>

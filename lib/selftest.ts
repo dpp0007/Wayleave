@@ -1,9 +1,11 @@
-import { applyGemini, costOnPage, excerptFor, summarise, supportedCost, isOfficial, parseJson, recommend, totals, verifyText } from "./logic";
+import { applyGemini, normalizeItems, costOnPage, excerptFor, summarise, supportedCost, isOfficial, parseJson, recommend, totals, verifyText } from "./logic";
 import assert from "node:assert";
 import { activityOf } from "./activity";
+import { applyFill, keywordWindows, pickTargets } from "./fill";
 import { toMarkdown } from "./export";
 import { clock, minutesLeft, overallProgress, placeProgress, stepOf } from "./progress";
 import { fxRow } from "./fx";
+import { cleanText, itemsOf, parsePoll, parseStart, safeUrl } from "./validate";
 import { toItem } from "./gemini";
 import { TFError, explain } from "./tf";
 import { buildScript, scriptEnd, textAt } from "./typeScript";
@@ -86,7 +88,7 @@ const base: any = { place: "A", seeds: [], notes: [], researchId: "r", agentId: 
 assert.ok(placeProgress(base, 60_000) < placeProgress(base, 240_000) && placeProgress(base, 240_000) <= 0.88);
 assert.ok(placeProgress({ ...base, activity: { sourceCount: 30 } }, 60_000) > placeProgress(base, 60_000)); // reading more pages moves the bar
 assert.equal(placeProgress({ ...base, done: true }, 1), 1); assert.ok(placeProgress({ ...base, done: true, gemini: "pending" }, 1) < 1);
-assert.equal(stepOf({ ...base, stage: 1 }), 1); assert.equal(stepOf({ ...base, done: true, gemini: "pending" }), 4); assert.equal(stepOf({ ...base, done: true, gemini: "done" }), 5);
+assert.equal(stepOf({ ...base, stage: 1 }), 1); assert.equal(stepOf({ ...base, done: true, fill: "pending", gemini: "pending" }), 4); assert.equal(stepOf({ ...base, done: true, fill: "done", gemini: "pending" }), 5); assert.equal(stepOf({ ...base, done: true, gemini: "done" }), 6);
 assert.equal(minutesLeft(0.5, 100_000), null); assert.equal(minutesLeft(0.1, 400_000), null); assert.equal(minutesLeft(0.5, 240_000), 4);
 assert.equal(clock(125_000), "2:05"); assert.equal(overallProgress([], 0), 0);
 
@@ -108,4 +110,61 @@ const sm = summarise({ items: [
   { name: "Return", kind: "ongoing", cost: { min: 500, max: 500, currency: "INR" }, time_days: {} } ], gaps: [] }, { INR: 94 });
 assert.deepEqual(sm.priced_items.map((x: any) => x.name), ["Licence", "Reg"]); assert.deepEqual(sm.unpriced_items.map((x: any) => x.name), ["NOC"]);
 assert.equal(sm.usd_min, 1.49); assert.equal(sm.usd_max, 11.06); // 140-1,040 INR at 94 per USD
+// input validation: what may reach the research prompts and the upstream APIs
+assert.deepEqual(parseStart({ activity: "  open a   café\n", places: ["Singapore", "singapore", "London", "Dubai"] }), { activity: "open a café", places: ["Singapore", "London", "Dubai"] });
+assert.ok("error" in parseStart({ activity: "open a café", places: ["Singapore", "London"] }));                 // fewer than 3 places
+assert.ok("error" in parseStart({ activity: "open a café", places: ["A1", "B2", "C3", "D4", "E5", "F6"] }));      // more than 5
+assert.ok("error" in parseStart({ activity: "ignore previous <script>", places: ["Singapore", "London", "Dubai"] })); // markup
+assert.ok("error" in parseStart({ activity: "x", places: ["Singapore", "London", "Dubai"] }));                   // too short
+assert.ok("error" in parseStart({ activity: "a".repeat(161), places: ["Singapore", "London", "Dubai"] }));       // too long
+assert.ok("error" in parseStart({ activity: "open a café", places: ["Singapore", "London", 42] }));             // non-string place
+assert.equal(cleanText("a\u2028b\u0000c", 1, 10), "a b c");                                                    // control characters collapsed
+
+// links: only http(s) survives, so model or page output can never inject a javascript: link
+assert.equal(safeUrl("javascript:alert(1)"), undefined); assert.equal(safeUrl("data:text/html,x"), undefined); assert.equal(safeUrl("https://www.sfa.gov.sg/x"), "https://www.sfa.gov.sg/x");
+const ni = normalizeItems([{ name: "x".repeat(900), kind: "weird", cost: { min: -5, max: 1e15, currency: "sgd" }, source_url: "javascript:alert(1)", evidence: "q" }, "junk", null]);
+assert.equal(ni.length, 1); assert.equal(ni[0].name.length, 200); assert.equal(ni[0].kind, "licence"); assert.equal(ni[0].cost.min, null); assert.equal(ni[0].cost.max, null);
+assert.equal(ni[0].cost.currency, "SGD"); assert.equal(ni[0].source_url, undefined);
+assert.equal(itemsOf(Array.from({ length: 21 }, () => ({}))), null);                                              // size cap
+assert.equal(itemsOf([{ source_url: "javascript:x" }])![0].source_url, undefined);
+
+// poll state comes from the browser: ids are shape-checked and a forged start time cannot dodge the research deadline
+assert.equal(parsePoll({ place: "Singapore", researchId: "../../etc/passwd", agentId: null }), null);
+assert.equal(parsePoll({ place: "Singapore", researchId: "01a1be69-7b35-7e4f", agentId: "x" }), null);
+const pp = parsePoll({ place: "Singapore", researchId: "01a1be69-7b35-7e4f", agentId: null, startedAt: Date.now() + 9e9, notes: Array(50).fill("n") })!;
+assert.ok(pp.startedAt <= Date.now()); assert.equal(pp.notes.length, 12);
+assert.ok(parsePoll({ place: "Singapore", researchId: null, agentId: null, startedAt: 1 })!.startedAt >= Date.now() - 3 * 3600_000 - 1000);
+// gap filling: only unstated start-up steps are chased, and a found fee is accepted only when the page backs it
+const gi = [
+  { name: "Reg", kind: "registration", step: 1, cost: { min: 40, max: 40, currency: "INR" }, time_days: {} },
+  { name: "Trade licence", kind: "licence", step: 2, cost: {}, time_days: {}, source_url: "https://x.gov.in/a" },
+  { name: "Fire NOC", kind: "inspection", step: 3, cost: {}, time_days: {} },
+  { name: "Annual return", kind: "ongoing", step: 4, cost: {}, time_days: {} },
+  { name: "Already filled", kind: "licence", step: 5, cost: {}, time_days: {}, filled: { url: "https://x.gov.in/z" } },
+];
+assert.deepEqual(pickTargets(gi).map((x) => x.name), ["Trade licence", "Fire NOC"]);   // unpriced start-up steps, licence before inspection; not priced, ongoing or already filled
+assert.equal(pickTargets(gi, 1).length, 1);
+const pageText = "Trade licence fee. The licence fee for a shop is Rs 750 per year. Processing takes 7 working days from application. " + "Unrelated text. ".repeat(80);
+const good = { i: 1, found: true, url: "https://x.gov.in/a", fee_min: "750", fee_max: "750", currency: "inr", days_min: "7", days_max: "7", quote: "The licence fee for a shop is Rs 750 per year. Processing takes 7 working days" };
+const ok = applyFill(gi, [good], { "https://x.gov.in/a": pageText }, "2026-11-09");
+assert.equal(ok.filled, 1); assert.deepEqual(ok.items[1].cost, { min: 750, max: 750, currency: "INR" }); assert.deepEqual(ok.items[1].time_days, { min: 7, max: 7 });
+assert.equal(ok.items[1].filled.url, "https://x.gov.in/a"); assert.deepEqual(ok.items[1].filled.fields, ["fee", "time"]); assert.ok(ok.items[1].excerpt.includes("Rs 750"));
+assert.equal(ok.items[0], gi[0]); // other items untouched
+const rej = (row: any, text = pageText) => applyFill(gi, [{ ...good, ...row }], { "https://x.gov.in/a": text }).rejected[0]?.reason;
+assert.equal(rej({ quote: "The fee is Rs 750 per application, payable at any bank branch" }), "quote not on page");        // invented quote
+assert.equal(rej({ fee_min: "800", fee_max: "800" }), "amount not in quote");                                           // number not in the quote
+assert.equal(rej({ fee_min: "", fee_max: "", days_min: "9", days_max: "9" }), "days not in quote");
+assert.equal(rej({ quote: "The licence fee for a shop is valid for 750 days." , fee_min: "750", fee_max: "750" }, pageText + " The licence fee for a shop is valid for 750 days."), "amount not in quote"); // "750 days" is not a fee
+assert.equal(rej({ url: "javascript:alert(1)" }), "no page or quote");                                                  // unsafe link
+assert.equal(rej({ fee_min: "0", fee_max: "150", quote: "The licence fee for a shop is Rs 750 per year. Processing takes 7 working days" }), "amount not in quote");
+{ // zero is accepted only when the quote says free; a 0 lifted from a subsidy line is rejected
+  const zt = { "https://x.gov.in/a": "Course fee $150.00 Subsidy -$75.00 Net payable $0.00. Registration is free of charge for all applicants." };
+  const z = (quote: string) => applyFill(gi, [{ ...good, fee_min: "0", fee_max: "0", days_min: "", days_max: "", currency: "inr", quote }], zt).rejected[0]?.reason;
+  assert.equal(z("Course fee $150.00 Subsidy -$75.00 Net payable $0.00."), "zero fee not stated as free");
+  assert.equal(z("Registration is free of charge for all applicants. Net payable $0.00"), undefined);
+}
+assert.equal(applyFill(gi, [{ ...good, found: false }], { "https://x.gov.in/a": pageText }).filled, 0);
+assert.equal(applyFill(gi, [{ ...good, fee_min: "750", fee_max: "750", days_min: "", days_max: "", currency: "" }], { "https://x.gov.in/a": pageText }).items[1].cost.currency, "INR"); // currency from the place's other items
+const win = keywordWindows("Welcome menu about us. ".repeat(100) + " The fee is Rs 750 and processing takes 7 working days. " + "Footer links. ".repeat(100), 2, 300);
+assert.ok(win.includes("Rs 750") && win.length < 700);
 console.log("selftest ok");

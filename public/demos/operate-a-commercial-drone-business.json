@@ -68,7 +68,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee and processing time ranges are supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 2,
@@ -91,7 +98,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee and delivery time are supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 3,
@@ -114,7 +128,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text does not specify a processing time for the UAPL application.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": false
+          }
         },
         {
           "step": 4,
@@ -137,7 +158,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text does not specify a processing time for the Operator Permit.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": false
+          }
         },
         {
           "step": 5,
@@ -160,7 +188,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee and processing time are supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 6,
@@ -183,7 +218,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee and processing time are supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 7,
@@ -206,7 +248,14 @@
           "status": "unclear",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text does not mention costs or processing times for insurance.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 8,
@@ -214,8 +263,8 @@
           "name": "UAPL Theory Test — CAAS-administered pre-licence examination",
           "authority": "Civil Aviation Authority of Singapore (CAAS) / Singapore Aviation Academy",
           "cost": {
-            "min": 136,
-            "max": 136,
+            "min": 136.25,
+            "max": 136.25,
             "currency": "SGD"
           },
           "time_days": {
@@ -229,7 +278,20 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The fee is supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          },
+          "cost_unsupported": {
+            "min": 136,
+            "max": 136,
+            "currency": "SGD"
+          },
+          "cost_corrected": true
         },
         {
           "step": 9,
@@ -252,7 +314,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "partly",
+            "note": "The text mentions a 10-day processing time for the UAPL application, not the account registration itself.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": false
+          }
         },
         {
           "step": 10,
@@ -275,7 +344,14 @@
           "status": "unclear",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text does not mention costs or processing times for B-RID.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 11,
@@ -283,8 +359,8 @@
           "name": "GST Registration — IRAS (mandatory when taxable turnover exceeds S$1 million)",
           "authority": "Inland Revenue Authority of Singapore (IRAS)",
           "cost": {
-            "min": 0,
-            "max": 0,
+            "min": null,
+            "max": null,
             "currency": "SGD"
           },
           "time_days": {
@@ -298,7 +374,19 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The text does not mention a processing time for GST registration.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": false
+          },
+          "cost_unsupported": {
+            "min": 0,
+            "max": 0,
+            "currency": "SGD"
+          }
         },
         {
           "step": 12,
@@ -321,7 +409,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text does not mention a fee, but implies no cost for reporting.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         }
       ],
       "gaps": [
@@ -338,11 +433,16 @@
         "Insurance certificate minimum validity period: Not stated on any official CAAS page retrieved.",
         "ACRA business name reservation fee (S$15 per application) is confirmed from the fee schedule [8] but the name reservation step is a prerequisite not separately listed above; noted here for completeness."
       ],
+      "fill_stats": {
+        "tried": 2,
+        "filled": 0
+      },
+      "gemini_model": "gemini-3.1-flash-lite",
       "summary": {
         "cost_min": 1910,
         "cost_max": 1910,
         "currency": "SGD",
-        "cost_items_unknown": 1,
+        "cost_items_unknown": 2,
         "time_min_days": 44,
         "time_max_days": 127,
         "time_items_unknown": 1,
@@ -351,12 +451,74 @@
         "usd_min": 1489,
         "usd_max": 1489,
         "items_unknown": {
-          "cost": 1,
+          "cost": 2,
           "time": 1
         },
-        "verified": 12,
+        "priced_items": [
+          {
+            "name": "UA Operator Permit (OP) — eSOMS",
+            "min": 700,
+            "max": 700,
+            "currency": "SGD",
+            "source_url": "https://isomer-user-content.by.gov.sg/175/8c711ab2-3de1-4ba2-b752-a319ed0099da/ac-anr101-2-1(8)-permits-for-unmanned-aircraft-3-jul-2025-(clean).pdf"
+          },
+          {
+            "name": "Unmanned Aircraft Pilot Licence (UAPL) — CAPELS",
+            "min": 500,
+            "max": 500,
+            "currency": "SGD",
+            "source_url": "https://ask.gov.sg/caas/questions/clq3e4u6w00d610yef13v0djg"
+          },
+          {
+            "name": "Business Entity Registration (ACRA via Bizfile)",
+            "min": 300,
+            "max": 300,
+            "currency": "SGD",
+            "source_url": "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/"
+          },
+          {
+            "name": "CFMS UA Tracker — Centralised Flight Management System subscription and tracker purchase",
+            "min": 265,
+            "max": 265,
+            "currency": "SGD",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Class 1 Activity Permit (AP1) — per operation, via eSOMS",
+            "min": 120,
+            "max": 120,
+            "currency": "SGD",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "Unmanned Aircraft (UA) Registration — CAAS UA Portal",
+            "min": 25,
+            "max": 25,
+            "currency": "SGD",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/registration-deregistration/"
+          }
+        ],
+        "unpriced_items": [
+          {
+            "name": "Third-Party Liability Insurance (mandatory for commercial operations)",
+            "source_url": "https://www.caas.gov.sg/unmanned-aircraft/operator-and-activity-permits/"
+          },
+          {
+            "name": "GST Registration — IRAS (mandatory when taxable turnover exceeds S$1 million)",
+            "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-registration-deregistration/do-i-need-to-register-for-gst"
+          }
+        ],
+        "verified": 11,
+        "gemini": {
+          "checked": 12,
+          "supported": 10,
+          "partly": 1,
+          "unsupported": 1,
+          "currency_unsure": 0,
+          "corrected": 1
+        },
         "gaps": 12,
-        "confidence": 0.5,
+        "confidence": 0.4583333333333333,
         "renewals": [
           {
             "name": "Business Entity Registration (ACRA via Bizfile)",
@@ -523,7 +685,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is explicitly stated as £12.34.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 2,
@@ -546,7 +715,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is explicitly stated as £0.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 3,
@@ -569,7 +745,14 @@
           "status": "unclear",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 4,
@@ -592,7 +775,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is £524 per year.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 5,
@@ -615,7 +805,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 6,
@@ -638,7 +835,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 7,
@@ -646,8 +850,8 @@
           "name": "VAT Registration (if VAT-taxable turnover exceeds £90,000)",
           "authority": "HM Revenue & Customs (HMRC)",
           "cost": {
-            "min": 0,
-            "max": 0,
+            "min": null,
+            "max": null,
             "currency": "GBP"
           },
           "time_days": {
@@ -661,7 +865,19 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          },
+          "cost_unsupported": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          }
         },
         {
           "step": 8,
@@ -684,7 +900,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The range reflects the minimum and maximum fees listed for different assessment levels.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 9,
@@ -707,7 +930,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is explicitly stated as £204.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 10,
@@ -730,7 +960,14 @@
           "status": "unclear",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 11,
@@ -738,8 +975,8 @@
           "name": "Occurrence Reporting — mandatory reporting of safety occurrences and accidents",
           "authority": "UK CAA (occurrences) / UK Air Accidents Investigation Branch — AAIB (accidents)",
           "cost": {
-            "min": 0,
-            "max": 0,
+            "min": null,
+            "max": null,
             "currency": "GBP"
           },
           "time_days": {
@@ -753,7 +990,19 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          },
+          "cost_unsupported": {
+            "min": 0,
+            "max": 0,
+            "currency": "GBP"
+          }
         },
         {
           "step": 12,
@@ -776,7 +1025,14 @@
           "status": "unclear",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No cost information is provided in the source text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         }
       ],
       "gaps": [
@@ -798,11 +1054,16 @@
         "VAT registration processing time: not stated on gov.uk/how-vat-works",
         "HMRC Self Assessment or Corporation Tax registration processing time: not stated on gov.uk/set-up-business"
       ],
+      "fill_stats": {
+        "tried": 3,
+        "filled": 0
+      },
+      "gemini_model": "gemini-3.1-flash-lite",
       "summary": {
         "cost_min": 3162.34,
         "cost_max": 18040.34,
         "currency": "GBP",
-        "cost_items_unknown": 2,
+        "cost_items_unknown": 3,
         "time_min_days": 1,
         "time_max_days": 1,
         "time_items_unknown": 7,
@@ -811,10 +1072,69 @@
         "usd_min": 4226,
         "usd_max": 24106,
         "items_unknown": {
-          "cost": 2,
+          "cost": 3,
           "time": 7
         },
+        "priced_items": [
+          {
+            "name": "UK SORA-based Operational Authorisation (for complex/BVLOS/beyond-standard operations)",
+            "min": 2422,
+            "max": 17300,
+            "currency": "GBP",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/uk-sora-based-operational-authorisations/charges-for-a-uk-sora-based-operational-authorisation/"
+          },
+          {
+            "name": "PDRA01 Operational Authorisation (Specific Category — standard commercial VLOS operations)",
+            "min": 524,
+            "max": 524,
+            "currency": "GBP",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/pdra01-operational-authorisation/pdra01-overview/"
+          },
+          {
+            "name": "SIA Public Space Surveillance (CCTV) Licence — required if drone footage is monitored for security purposes",
+            "min": 204,
+            "max": 204,
+            "currency": "GBP",
+            "source_url": "https://www.gov.uk/guidance/apply-for-an-sia-licence"
+          },
+          {
+            "name": "CAA Operator ID (UAS Operator Registration)",
+            "min": 12.34,
+            "max": 12.34,
+            "currency": "GBP",
+            "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-an-operator-id/"
+          },
+          {
+            "name": "CAA Flyer ID (Remote Pilot Theory Test & Registration)",
+            "min": 0,
+            "max": 0,
+            "currency": "GBP",
+            "source_url": "https://www.caa.co.uk/drones/open-category/getting-started-with-drones-and-model-aircraft/get-a-flyer-id/"
+          }
+        ],
+        "unpriced_items": [
+          {
+            "name": "RPC-L1 (Level 1 Remote Pilot Certificate) or GVC — Specific Category pilot competency",
+            "source_url": "https://www.caa.co.uk/drones/specific-category/remote-pilot-qualifications/level-1-2-and-3-remote-pilot-certificates-and-gvc/"
+          },
+          {
+            "name": "Third-Party Liability Insurance (Assimilated Regulation (EU) 785/2004)",
+            "source_url": "https://www.caa.co.uk/drones/open-category/moving-on-to-more-advanced-flying/insurance-requirements/"
+          },
+          {
+            "name": "VAT Registration (if VAT-taxable turnover exceeds £90,000)",
+            "source_url": "https://www.gov.uk/how-vat-works"
+          }
+        ],
         "verified": 12,
+        "gemini": {
+          "checked": 12,
+          "supported": 12,
+          "partly": 0,
+          "unsupported": 0,
+          "currency_unsure": 0,
+          "corrected": 0
+        },
         "gaps": 17,
         "confidence": 0.41379310344827586,
         "renewals": [
@@ -1001,7 +1321,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "unsupported",
+            "note": "The provided text does not mention processing times for the certificate.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": false
+          }
         },
         {
           "step": 2,
@@ -1024,7 +1351,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost and time are supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 3,
@@ -1047,7 +1381,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No costs or times were claimed, and none are mentioned in the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 4,
@@ -1070,7 +1411,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": false,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is explicitly stated and the time is supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 5,
@@ -1093,7 +1441,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The text confirms the tax threshold but does not specify a registration fee, supporting the claim of 0.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 6,
@@ -1116,7 +1471,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is implied as zero and the time is supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 7,
@@ -1139,7 +1501,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is implied as zero and the time range is supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 8,
@@ -1162,7 +1531,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is explicitly stated and the time is supported by the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 9,
@@ -1185,7 +1561,14 @@
           "status": "unclear",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No costs or times were claimed, and none are mentioned in the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 10,
@@ -1208,7 +1591,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "No costs or times were claimed, and none are mentioned in the text.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 11,
@@ -1231,7 +1621,14 @@
           "status": "found",
           "verification": "verified",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is implied as zero and the reporting requirement is supported.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         },
         {
           "step": 12,
@@ -1254,7 +1651,14 @@
           "status": "found",
           "verification": "verified_fuzzy",
           "official_domain": true,
-          "checked_at": "2026-11-09"
+          "checked_at": "2026-11-09",
+          "gemini": {
+            "verdict": "supported",
+            "note": "The cost is implied as zero and the compliance requirements are supported.",
+            "cost_ok": true,
+            "currency_ok": true,
+            "time_ok": true
+          }
         }
       ],
       "gaps": [
@@ -1271,6 +1675,11 @@
         "Texas assumed name (DBA) certificate fee: If operating under a trade name, a DBA certificate must be filed with the county clerk in each county of operation [14]; county filing fees vary by county and were not confirmed in the evidence set.",
         "Federal EIN (IRS): Required for business tax purposes; obtained free from IRS. Not confirmed as a Texas-specific requirement in evidence but universally required for business entities; IRS fee = $0 (online), not addressed in Texas official sources reviewed."
       ],
+      "fill_stats": {
+        "tried": 3,
+        "filled": 0
+      },
+      "gemini_model": "gemini-3.1-flash-lite",
       "summary": {
         "cost_min": 505,
         "cost_max": 505,
@@ -1281,15 +1690,74 @@
         "time_items_unknown": 3,
         "time_longest_step_days": 365,
         "steps": 8,
-        "usd_min": 505,
-        "usd_max": 505,
+        "usd_min": null,
+        "usd_max": null,
         "items_unknown": {
           "cost": 3,
           "time": 3
         },
-        "verified": 12,
+        "priced_items": [
+          {
+            "name": "Texas LLC (or other entity) Formation – Certificate of Formation filed with Texas Secretary of State",
+            "min": 300,
+            "max": 300,
+            "currency": "USD",
+            "source_url": "https://www.sos.state.tx.us/corp/forms/806_boc.pdf"
+          },
+          {
+            "name": "TDA Commercial Pesticide Applicator License with Aerial Category (if applying pesticides by drone for hire)",
+            "min": 200,
+            "max": 200,
+            "currency": "USD",
+            "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf"
+          },
+          {
+            "name": "FAA Drone Registration under Part 107 (FAADroneZone)",
+            "min": 5,
+            "max": 5,
+            "currency": "USD",
+            "source_url": "https://www.faa.gov/uas/getting_started/register_drone"
+          },
+          {
+            "name": "Texas Franchise Tax Registration and Annual Report",
+            "min": 0,
+            "max": 0,
+            "currency": "USD",
+            "source_url": "https://comptroller.texas.gov/taxes/franchise/"
+          },
+          {
+            "name": "Texas Sales and Use Tax Permit",
+            "min": 0,
+            "max": 0,
+            "currency": "USD",
+            "source_url": "https://comptroller.texas.gov/taxes/permit/"
+          }
+        ],
+        "unpriced_items": [
+          {
+            "name": "FAA Part 107 Remote Pilot Certificate (Unmanned Aircraft General – Small / UAG Knowledge Test + IACRA Application)",
+            "source_url": "https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot"
+          },
+          {
+            "name": "TDA Commercial Applicator Business Registration (PAB-300) – required for all commercial pesticide applicator businesses",
+            "source_url": "https://texasagriculture.gov/Portals/0/forms/PEST/Applicator/pa_401_application_for_commercial_applicator_license%20instructions.pdf"
+          },
+          {
+            "name": "Commercial Pesticide Applicator Business Liability Insurance (if applying restricted-use, state-limited-use, or regulated herbicide pesticides by drone)",
+            "source_url": "https://texasagriculture.gov/Regulatory-Programs/Pesticides/Pesticide-Commercial-Noncommercial-Applicator-Lice"
+          }
+        ],
+        "verified": 11,
+        "gemini": {
+          "checked": 12,
+          "supported": 11,
+          "partly": 0,
+          "unsupported": 1,
+          "currency_unsure": 0,
+          "corrected": 0
+        },
         "gaps": 12,
-        "confidence": 0.5,
+        "confidence": 0.4583333333333333,
         "renewals": [
           {
             "name": "FAA Part 107 Remote Pilot Certificate (Unmanned Aircraft General – Small / UAG Knowledge Test + IACRA Application)",
@@ -1397,14 +1865,16 @@
       {
         "place": "Singapore",
         "level": "full",
-        "score": 0.81,
+        "score": 0.817,
         "missing": []
       },
       {
         "place": "Texas, USA",
         "level": "full",
-        "score": 0.525,
-        "missing": []
+        "score": 0.256,
+        "missing": [
+          "cost"
+        ]
       },
       {
         "place": "United Kingdom",
@@ -1421,11 +1891,43 @@
       "steps": 0.15,
       "confidence": 0.2
     },
+    "headline": "Singapore",
+    "provisional": true,
+    "points": [
+      {
+        "tone": "good",
+        "text": "Time: Singapore 127 days upper bound (steps summed) vs Texas, USA 460 days upper bound (steps summed)."
+      },
+      {
+        "tone": "warn",
+        "text": "Singapore has 12 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "Texas, USA: cost not scored (too little stated on official pages); not rewarded for that gap."
+      },
+      {
+        "tone": "warn",
+        "text": "Texas, USA has 12 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "United Kingdom: time not scored (too little stated on official pages); not rewarded for that gap."
+      },
+      {
+        "tone": "warn",
+        "text": "United Kingdom has 17 flagged gap(s) - confirm with a local lawyer."
+      },
+      {
+        "tone": "warn",
+        "text": "Costs/times are what official pages state; real timelines vary. Hand this to a lawyer to confirm."
+      }
+    ],
     "text": [
-      "Easiest place to start on the evidence gathered: Singapore (score 0.81).",
-      "Cost: Singapore 1489 USD upper bound (FX-converted) vs Texas, USA 505 USD upper bound (FX-converted).",
+      "Provisional - Easiest place to start on the evidence gathered: Singapore (score 0.817).",
       "Time: Singapore 127 days upper bound (steps summed) vs Texas, USA 460 days upper bound (steps summed).",
       "Singapore has 12 flagged gap(s) - confirm with a local lawyer.",
+      "Texas, USA: cost not scored (too little stated on official pages); not rewarded for that gap.",
       "Texas, USA has 12 flagged gap(s) - confirm with a local lawyer.",
       "United Kingdom: time not scored (too little stated on official pages); not rewarded for that gap.",
       "United Kingdom has 17 flagged gap(s) - confirm with a local lawyer.",
@@ -1433,5 +1935,52 @@
     ]
   },
   "fx_note": "USD figures use live open.er-api.com rates (indicative); native-currency totals are authoritative.",
-  "refreshed_at": "2026-11-09T04:27:58.637Z"
+  "refreshed_at": "2026-11-09T04:27:58.637Z",
+  "fx": {
+    "ok": true,
+    "asof": "2026-11-09",
+    "rows": [
+      {
+        "currency": "SGD",
+        "per_usd": 1.282886,
+        "sources": [
+          {
+            "name": "open.er-api.com",
+            "per_usd": 1.282886
+          },
+          {
+            "name": "currency-api (jsDelivr)",
+            "per_usd": 1.281014
+          },
+          {
+            "name": "ECB via Frankfurter",
+            "per_usd": 1.2816
+          }
+        ],
+        "max_dev_pct": 0.15,
+        "status": "ok"
+      },
+      {
+        "currency": "GBP",
+        "per_usd": 0.748366,
+        "sources": [
+          {
+            "name": "open.er-api.com",
+            "per_usd": 0.748366
+          },
+          {
+            "name": "currency-api (jsDelivr)",
+            "per_usd": 0.74740543
+          },
+          {
+            "name": "ECB via Frankfurter",
+            "per_usd": 0.74711
+          }
+        ],
+        "max_dev_pct": 0.17,
+        "status": "ok"
+      }
+    ]
+  },
+  "enriched_at": "2026-11-09T13:25:02.355Z"
 }

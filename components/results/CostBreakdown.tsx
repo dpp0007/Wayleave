@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Card, Eyebrow, cx } from "../ui";
+import { safeUrl } from "@/lib/validate";
 import { usd } from "./PlaceCards";
 
 const num = (n: any) => (typeof n === "number" ? n.toLocaleString("en-US", { maximumFractionDigits: 2 }) : n);
@@ -30,7 +31,7 @@ function PlaceCosts({ p }: { p: any }) {
               <span className="min-w-0 truncate" title={x.name}>{x.name}</span>
               <span className="flex shrink-0 items-baseline gap-1.5 tabular-nums">
                 <b className="font-semibold">{amount(x)}</b>
-                {x.source_url && <a href={x.source_url} target="_blank" rel="noopener noreferrer" aria-label={`Source for ${x.name}`} className="text-xs text-accent">↗</a>}
+                {x.source_url && <a href={safeUrl(x.source_url)} target="_blank" rel="noopener noreferrer" aria-label={`Source for ${x.name}`} className="text-xs text-accent">↗</a>}
               </span>
             </li>
           ))}
