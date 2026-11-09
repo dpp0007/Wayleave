@@ -6,6 +6,10 @@
 
 It is a decision aid for a founder, to be handed to a lawyer for confirmation. It is not legal advice, and it does not check whether a person or business holds a licence (that is TinyVerify).
 
+**Live:** <https://wayleave-khaki.vercel.app> · **Code:** <https://github.com/dpp0007/Wayleave>
+
+The live site is open to everyone with a small daily research budget (12 research runs, about 4 comparisons a day, 4 per IP per hour). The two saved runs always open instantly and cost nothing.
+
 ## What you get
 
 - **One input, one flow.** Type what you want to do, add places, press Compare. No signup, no setup screens.

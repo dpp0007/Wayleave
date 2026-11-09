@@ -1,10 +1,10 @@
 node_modules
 .next
 .env
-.env.local
+.env*.local
+!.env.example
 next-env.d.ts
 *.tsbuildinfo
-__pycache__
 .vercel
-.env*.local
 *.log
+__pycache__
