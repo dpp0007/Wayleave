@@ -448,8 +448,8 @@
         "time_items_unknown": 1,
         "time_longest_step_days": 60,
         "steps": 8,
-        "usd_min": 1489,
-        "usd_max": 1489,
+        "usd_min": 1482,
+        "usd_max": 1482,
         "items_unknown": {
           "cost": 2,
           "time": 1
@@ -684,7 +684,7 @@
           "evidence": "Registration for an Operator ID costs £12.34 and is valid for 1 year.",
           "status": "found",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -714,7 +714,7 @@
           "evidence": "Flyer ID | £0 | 5 years; Use this service to: take the theory test to get a Flyer ID",
           "status": "found",
           "verification": "verified_fuzzy",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -744,7 +744,7 @@
           "evidence": "There are four qualifications for the Specific Category: General Visual Line of Sight Certificate (GVC); Level 1 Remote Pilot Certificate (RPC-L1) Part A – VLOS, Part B – BVLOS with Visual Mitigations (VM); Level 2 Remote Pilot Certificate (RPC-L2); Level 3 Remote Pilot Certificate (RPC-L3).",
           "status": "unclear",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -774,7 +774,7 @@
           "evidence": "PDRA01 costs £524 per year. There's no VAT to pay. Your authorisation will last for 12 months.",
           "status": "found",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -804,7 +804,7 @@
           "evidence": "If you fly a drone or model aircraft for any commercial reason, you must have third party insurance as a minimum. Insurance must comply with the regulatory requirements in Assimilated Regulation (EU) 785/2004.",
           "status": "found",
           "verification": "verified_fuzzy",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -899,7 +899,7 @@
           "evidence": "SAIL 1: Assessment 1 fixed charge £2,422 ... SAIL V/VI initial application & non-technical renewal (Note 6) £17,300 £11,517 ... Your operational authorisation will last for 12 months. There is no VAT to pay.",
           "status": "unclear",
           "verification": "verified_fuzzy",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -959,7 +959,7 @@
           "evidence": "The UAS Operator must ensure that the radio spectrum used for the C2 Link and for any payload communications complies with the relevant Ofcom requirements and that any licences required for its operation have been obtained.",
           "status": "unclear",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -989,7 +989,7 @@
           "evidence": "Any occurrences that take place while operating under this Authorisation must be reported in accordance with UK Reg (EU) 376/2014 and the requirements set out in CAP 722 section 2.7. Any accidents ... must be reported in accordance with UK Reg (EU) 996/2010 to the UK AAIB.",
           "status": "found",
           "verification": "verified_fuzzy",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -1024,7 +1024,7 @@
           "evidence": "Taking and storing images of identifiable individuals from UAS, even inadvertently, may be subject to the General Data Protection Regulation and Data Protection Act 2018.",
           "status": "unclear",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -1069,8 +1069,8 @@
         "time_items_unknown": 7,
         "time_longest_step_days": 1,
         "steps": 8,
-        "usd_min": 4226,
-        "usd_max": 24106,
+        "usd_min": 4171,
+        "usd_max": 23792,
         "items_unknown": {
           "cost": 3,
           "time": 7
@@ -1410,7 +1410,7 @@
           "evidence": "\"Certificate of formation for a Texas entity (except nonprofit corporation, cooperative association, PA or LP) (Forms 201, 203, 205, 206) $300\"",
           "status": "found",
           "verification": "verified",
-          "official_domain": false,
+          "official_domain": true,
           "checked_at": "2026-11-09",
           "gemini": {
             "verdict": "supported",
@@ -1935,46 +1935,38 @@
     ]
   },
   "fx_note": "USD figures use live open.er-api.com rates (indicative); native-currency totals are authoritative.",
-  "refreshed_at": "2026-11-09T04:27:58.637Z",
+  "refreshed_at": "2026-11-17T07:54:39.462Z",
   "fx": {
     "ok": true,
-    "asof": "2026-11-09",
+    "asof": "2026-11-17",
     "rows": [
       {
         "currency": "SGD",
-        "per_usd": 1.282886,
+        "per_usd": 1.288895,
         "sources": [
           {
             "name": "open.er-api.com",
-            "per_usd": 1.282886
+            "per_usd": 1.288895
           },
           {
             "name": "currency-api (jsDelivr)",
-            "per_usd": 1.281014
-          },
-          {
-            "name": "ECB via Frankfurter",
-            "per_usd": 1.2816
+            "per_usd": 1.28822196
           }
         ],
-        "max_dev_pct": 0.15,
+        "max_dev_pct": 0.05,
         "status": "ok"
       },
       {
         "currency": "GBP",
-        "per_usd": 0.748366,
+        "per_usd": 0.758255,
         "sources": [
           {
             "name": "open.er-api.com",
-            "per_usd": 0.748366
+            "per_usd": 0.758255
           },
           {
             "name": "currency-api (jsDelivr)",
-            "per_usd": 0.74740543
-          },
-          {
-            "name": "ECB via Frankfurter",
-            "per_usd": 0.74711
+            "per_usd": 0.75693621
           }
         ],
         "max_dev_pct": 0.17,

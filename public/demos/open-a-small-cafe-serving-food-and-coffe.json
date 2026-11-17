@@ -993,7 +993,7 @@
           "ongoing_filing": "Annual business rates payment (usually 10 monthly instalments); report changes in circumstances to local council.",
           "source_url": "https://www.gov.uk/introduction-to-business-rates",
           "evidence": "\"Your local council will send you a business rates bill in February or March each year. This is for the following tax year.\" Small business multiplier 43.2p; retail/hospitality/leisure multiplier 38.2p from 1 April 2026 to 31 March 2027.",
-          "status": "found",
+          "status": "unclear",
           "verification": "quote_not_on_page",
           "official_domain": true,
           "checked_at": "2026-11-09",
@@ -1069,8 +1069,8 @@
         "time_items_unknown": 6,
         "time_longest_step_days": 40,
         "steps": 10,
-        "usd_min": 267,
-        "usd_max": 3379,
+        "usd_min": 264,
+        "usd_max": 3335,
         "items_unknown": {
           "cost": 3,
           "time": 6
@@ -1744,8 +1744,8 @@
         "time_items_unknown": 2,
         "time_longest_step_days": 60,
         "steps": 9,
-        "usd_min": 765,
-        "usd_max": 765,
+        "usd_min": 761,
+        "usd_max": 761,
         "items_unknown": {
           "cost": 3,
           "time": 2
@@ -2005,7 +2005,7 @@
   },
   "fx": {
     "ok": true,
-    "asof": "2026-11-09",
+    "asof": "2026-11-17",
     "rows": [
       {
         "currency": "AED",
@@ -2025,19 +2025,15 @@
       },
       {
         "currency": "GBP",
-        "per_usd": 0.748366,
+        "per_usd": 0.758255,
         "sources": [
           {
             "name": "open.er-api.com",
-            "per_usd": 0.748366
+            "per_usd": 0.758255
           },
           {
             "name": "currency-api (jsDelivr)",
-            "per_usd": 0.74740543
-          },
-          {
-            "name": "ECB via Frankfurter",
-            "per_usd": 0.74711
+            "per_usd": 0.75693621
           }
         ],
         "max_dev_pct": 0.17,
@@ -2045,26 +2041,23 @@
       },
       {
         "currency": "SGD",
-        "per_usd": 1.282886,
+        "per_usd": 1.288895,
         "sources": [
           {
             "name": "open.er-api.com",
-            "per_usd": 1.282886
+            "per_usd": 1.288895
           },
           {
             "name": "currency-api (jsDelivr)",
-            "per_usd": 1.281014
-          },
-          {
-            "name": "ECB via Frankfurter",
-            "per_usd": 1.2816
+            "per_usd": 1.28822196
           }
         ],
-        "max_dev_pct": 0.15,
+        "max_dev_pct": 0.05,
         "status": "ok"
       }
     ]
   },
   "generated_at": "2026-11-09T12:07:44Z",
-  "enriched_at": "2026-11-09T13:27:30.784Z"
+  "enriched_at": "2026-11-09T13:27:30.784Z",
+  "refreshed_at": "2026-11-17T07:54:39.424Z"
 }

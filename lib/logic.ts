@@ -6,8 +6,14 @@ import { safeUrl } from "./validate";
 export type Level = "full" | "partial" | "quick" | "failed";
 const OFFICIAL = new Set(["gov", "gob", "gouv", "govt", "government", "go", "gc", "admin", "europa", "gv", "overheid", "bund", "nyc", "mil", "state"]);
 
+/** Government regulators and agencies whose hostnames carry no "gov" label (e.g. the UK Civil Aviation Authority). */
+const OFFICIAL_HOSTS = ["gov.uk", "caa.co.uk", "ofcom.org.uk", "ico.org.uk", "fca.org.uk", "nhs.uk", "parliament.uk", "police.uk", "legislation.gov.uk", "canada.ca", "easa.europa.eu", "icao.int", "ird.govt.nz"];
+
 export const isOfficial = (url?: string) => {
-  try { return new URL(url || "").hostname.split(".").slice(1).some((l) => OFFICIAL.has(l)); } catch { return false; }
+  try {
+    const host = new URL(url || "").hostname.toLowerCase();
+    return host.split(".").slice(1).some((l) => OFFICIAL.has(l)) || OFFICIAL_HOSTS.some((h) => host === h || host.endsWith("." + h));
+  } catch { return false; }
 };
 
 /** Models often emit near-JSON: unescaped quotes inside quoted evidence, trailing commas, raw newlines. Repair line by line. */
@@ -152,6 +158,8 @@ export async function verifyItems(items: any[]) {
     else v = `unreadable (${errs[i.source_url] ?? "not_fetched"})`;
     const out: any = { ...i, verification: v, official_domain: isOfficial(i.source_url), checked_at: today };
     if (i.source_url in pages) out.excerpt = excerptFor(i, pages[i.source_url]);
+    // A quote that is not on its cited page can't back a "found" claim: downgrade it so it is flagged, never presented as confirmed.
+    if (v === "quote_not_on_page" && out.status === "found") out.status = "unclear";
     // A fee bound the page doesn't state as an amount is dropped (kept as `cost_unsupported` for transparency), never summed.
     if (i.source_url in pages) {
       const sc = supportedCost(i.cost, pages[i.source_url]);

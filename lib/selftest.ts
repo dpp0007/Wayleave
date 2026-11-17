@@ -167,4 +167,8 @@ assert.equal(applyFill(gi, [{ ...good, found: false }], { "https://x.gov.in/a": 
 assert.equal(applyFill(gi, [{ ...good, fee_min: "750", fee_max: "750", days_min: "", days_max: "", currency: "" }], { "https://x.gov.in/a": pageText }).items[1].cost.currency, "INR"); // currency from the place's other items
 const win = keywordWindows("Welcome menu about us. ".repeat(100) + " The fee is Rs 750 and processing takes 7 working days. " + "Footer links. ".repeat(100), 2, 300);
 assert.ok(win.includes("Rs 750") && win.length < 700);
+// regulators without a "gov" label count as official; look-alike hosts and junk do not
+assert.ok(isOfficial("https://www.caa.co.uk/drones/open-category/"));
+assert.ok(isOfficial("https://gov.uk/set-up-business") && isOfficial("https://www.acra.gov.sg/x") && isOfficial("https://tdlr.texas.gov/"));
+assert.ok(!isOfficial("https://caa.co.uk.evil.com/") && !isOfficial("https://notcaa.co.uk/") && !isOfficial("https://example.com/") && !isOfficial("nonsense"));
 console.log("selftest ok");
